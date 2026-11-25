@@ -1,0 +1,1 @@
+{"images": 186, "input_side": 512, "seed": 17, "arm": "combined", "split": "deepfish_test", "device": "cuda", "manifest_sha256": "957e57a0f251585c2544a9a623be890f1e80714cbd6cc1a7854b747f38eac593", "checkpoint_sha256": "00c12e36d78fbdee02230c870aad39e2d075e6db1973cc02da28f56866c765ee"}

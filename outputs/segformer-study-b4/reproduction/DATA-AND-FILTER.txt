@@ -1,0 +1,83 @@
+Training and evaluation data
+
+The training lists include every one of the 3,937 official UIIS training
+photographs and all 54,510 SynTIDE image/mask pairs. SynTIDE has ten variants
+for each of 5,451 caption IDs. The 691 UIIS validation IDs, source photographs
+and primary semantic reference file paths match the previous B0 study. The
+training list keeps the original UIIS split, including scenes identified in
+the prior visual-similarity audit. That audit flags 349 validation images
+matching groups in official UIIS train. The full source and split counts,
+native geometry checks and class support are in manifests/full-data-audit.json.
+
+The real training masks come from the TIDE authors' Training_TIDE_Data.zip.
+Their sea-floor ID 7 maps to this experiment's class 0. Wrecks, fish/other
+vertebrates, reefs/invertebrates, aquatic plants, divers and robots have
+IDs 1 through 6. Zero is valid background/seafloor. An evaluation or
+synthetic-training target value of 255 is ignored. check_author_masks.py
+verifies the source archive and maps the 3,937 training targets. The original
+B0 reproducibility materials document the preserved UIIS split and its COCO
+instance-mask conversion. See the two conversion audits for the secondary
+author-style validation mask comparison.
+
+Fetch data from the authors
+https://huggingface.co/datasets/hongk1998/TIDE
+https://huggingface.co/datasets/LiamLian0727/UIIS
+
+The previous study's reproduction/DATA.md and source-lock.json give the exact
+RGB and annotation release hashes. The source SynTIDE.zip has SHA-256
+257332448ca06edb71ca260273775bd8f44f271b814161e34cf8a62fc4f7c303.
+The separate SynTIDE_Caption.json has SHA-256
+6e9c2a4b51b7c0355b85a33b82bb36e99cb04cf7b9febbf71f2cde1761ae0659.
+
+Prepare the primary manifests with prepare_full.py. The default project paths
+are the paths used by this run. Relocated datasets require locally valid
+paths; the stable image IDs, source class support and mask hashes are portable.
+Raw synthetic.csv indexes the original 0–6 integer masks. synthetic-filtered.csv
+indexes the training targets produced below. All B4 models are fitted at seed
+17, with the held-out split used only for final evaluation.
+
+Teacher-based filtering
+
+The completed real-only UIIS B4 is the fixed filtering teacher. It supplies
+real-label supervision to the choice of trusted synthetic pixels. The new
+synthetic student is independently initialized. Using preprocess/filter.py
+from FreeMask as the executable reference, we compute the teacher's mean
+per-pixel cross entropy for each class over all labeled native pixels from the
+3,937 official real training images. Each limit is 1.5 times the corresponding
+class mean. We measure cross entropy on every original SynTIDE target pixel
+and replace a label with 255 only when its teacher loss exceeds its limit.
+Retained labels keep their exact source IDs. All seven classes, including
+background, have their own threshold. The images are normalized as in training;
+no random augmentations are applied. Teacher inference uses 512-pixel letterboxing
+and FP16 autocast, with FP32 native-resolution logits/loss and FP64 class sums.
+
+The written FreeMask equation uses mean loss over labeled synthetic pixels,
+whereas the official executable first averages class losses over real pixels.
+TIDE specifies the 1.5 multiplier and cites FreeMask; it does not publish
+calibration thresholds or a choice between these definitions. This experiment
+uses the released executable convention. Synthetic-reference class means are
+also recorded in filter-audit.json for comparison with the written definition.
+https://github.com/LiheYoung/FreeMask/blob/main/preprocess/filter.py#L62-L101
+https://papers.neurips.cc/paper_files/paper/2023/file/3ba7560b4c3e66d760fbdd472cf4a5a9-Paper-Conference.pdf#page=5
+https://arxiv.org/html/2503.21771v2#S5.SS3
+
+From the project root with the TIDE Python environment active:
+
+  python outputs/segformer-study-b4/reproduction/prepare_full.py
+  python outputs/segformer-study-b4/reproduction/filter_synthetic.py --watch
+  python outputs/segformer-study-b4/reproduction/archive_filtered.py
+  python outputs/segformer-study-b4/reproduction/verify_filter_decisions.py
+  python outputs/segformer-study-b4/reproduction/verify_filtered_batches.py
+
+The filter waits for the real-only run's complete.json and checks its SHA-256
+before loading its model. If interrupted, rerunning the same command resumes
+at the most recent 512-image shard. The filtered/complete.json marker is written
+after all saved targets have passed decoding, class histogram and checksum
+verification. The training script uses that marker before synthetic pretraining.
+The final pool is archived at training-targets/SynTIDE-B4-filtered.zip, with
+the checksum of each PNG and the calibration record inside the ZIP. The archive
+step also compares every retained pixel against its original SynTIDE class ID.
+The separate numerical check compares 12 randomly selected filtered targets to
+negative log probabilities recomputed with a standard full-precision CPU model.
+filtered-batch-coverage.json verifies that every scheduled batch in all three
+training passes contains supervised pixels, retaining all 54,510 image IDs.

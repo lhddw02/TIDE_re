@@ -1,0 +1,4 @@
+stage,training_stage,seed,b4_miou_percent,paper_table3_uiis_miou_percent,b4_minus_paper_pp,b0_reference,b0_seed17_miou_percent,b0_three_seed_mean_percent,b4_minus_b0_mean_pp,b4_minus_b0_seed17_pp
+real,Real only,17,54.52267235,70.20000000,-15.67732765,real,49.39199325,49.30322636,5.21944599,5.13067910
+synthetic,SynTIDE pretraining,17,56.71591397,76.50000000,-19.78408603,synthetic,34.27646625,34.92673891,21.78917506,22.43944772
+finetuned,SynTIDE → UIIS,17,56.81576184,75.40000000,-18.58423816,,,,,

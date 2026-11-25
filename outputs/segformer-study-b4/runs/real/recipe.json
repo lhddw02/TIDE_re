@@ -1,0 +1,47 @@
+{
+  "stage": "real",
+  "seed": 17,
+  "updates": 4000,
+  "side": 512,
+  "batch_size": 8,
+  "training_images": 3937,
+  "sample_presentations": 32000,
+  "classes": [
+    "background",
+    "wrecks",
+    "fish",
+    "reefs",
+    "aquatic plants",
+    "human divers",
+    "robots"
+  ],
+  "ignore": 255,
+  "manifest_sha256": "91dd3c0cf9c556b244e0b7419c744e8cc5a83c24dd11bc346bed13a96647b743",
+  "init_weights_sha256": "1cddf0f9ed0b7f1639a8f5e339c177673685df3e2e3c9575a649eb15bcf68a55",
+  "initialization": "ImageNet-1k MiT-B4 encoder, fresh seven-class SegFormer-B4 head",
+  "optimizer": "Fresh fused AdamW for each stage, betas=(0.9,0.999), eps=1e-8, weight decay 0.01 on multidimensional parameters",
+  "schedule": "100 update linear warmup then linear decay; peak encoder LR 6e-5 and decoder LR 6e-4",
+  "loss": "Valid-pixel mean cross entropy; ignored pixels are excluded; bilinear logits align_corners=False",
+  "precision": "torch AMP FP16 with dynamic loss scaling, FP32 parameters/loss, TF32 allowed, fused attention",
+  "preprocessing": "PIL RGB long side 512, centered 512-square padding, nearest-neighbor labels, ignored padding",
+  "augmentation": "Per-image horizontal flip p=.5, gain U(.9,1.1), additive shift U(-.05,.05)",
+  "pad_rgb": [
+    124,
+    116,
+    104
+  ],
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "torch": "2.0.1+cu118",
+  "transformers": "4.41.2",
+  "gpu": "NVIDIA GeForce RTX 3090 Ti",
+  "sampling": "seed-17 shuffled permutations without replacement, repeated until 4,000 full batches"
+}

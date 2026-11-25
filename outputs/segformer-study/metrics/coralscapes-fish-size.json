@@ -1,0 +1,12 @@
+{
+  "frames": 473,
+  "labeled_frame_instances": 13011,
+  "side": 512,
+  "fish_semantic_and_instance_disagreeing_pixels": 0,
+  "fish_share_of_valid_pixels_percent": 0.8621159519770102,
+  "median_native_pixel_area": 200.0,
+  "median_input_equivalent_pixel_area": 12.5,
+  "fraction_under_4_input_pixels": 0.15909614941203598,
+  "fraction_under_16_input_pixels": 0.5737452924448544,
+  "definition": "Frame-level fish instance occurrence using official IDs [50000,52000). Equivalent input area multiplies native pixel area by the fitted-to-native image area ratio; it measures scale without resampling labels. Individuals may recur across frames."
+}

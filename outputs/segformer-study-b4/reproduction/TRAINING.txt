@@ -1,0 +1,76 @@
+SegFormer-B4 staged training
+
+The real-only stage and the synthetic-pretraining stage each start with an
+ImageNet-1k MiT-B4 encoder from the nvidia/mit-b4 classification checkpoint and
+a newly initialized seven-class decoder, seed 17. The files and pinned encoder
+revision are listed in pretrained-encoder.json. initial-state.json hashes the
+complete initialized model, so equality can be checked across these stages.
+
+Real training uses all 3,937 official training photographs and their
+author-released dense masks with sea floor mapped to background. Its final model
+is the teacher for synthetic-label filtering. The complete filtered manifest
+retains 54,510 synthetic photographs. The filter uses real supervision through
+its teacher. The separately initialized synthetic-stage segmentation model
+receives gradients from the filtered synthetic data alone.
+
+The synthetic-stage sampler generates three independent shuffled permutations.
+Each epoch has 6,813 batches of eight and a final batch of six (6,814 updates),
+covering all 54,510 photographs once. Total synthetic-stage updates are 20,442.
+The real-only and final real-data stages use matched seed-17 sampling, AdamW
+settings and 4,000 full batches of eight. The final real-data stage initializes
+the complete encoder, decoder and buffers from the synthetic-stage final model
+with a fresh optimizer and fresh warmup. Each final checkpoint is a standard
+Hugging Face SegformerForSemanticSegmentation directory. No held-out mIoU is
+used to schedule or select a checkpoint.
+
+The downstream SegFormer iteration and augmentation settings are explicit
+experiment choices because the exact recipes for the published Table 3
+checkpoints were unavailable. All three stages use 512-square letterboxing,
+unweighted valid-pixel cross entropy, horizontal flips and mild RGB jitter;
+semantic masks are resized with nearest-neighbor interpolation. Real validation
+images are held out. Every optimizer uses a 100-update linear warmup followed by
+linear decay, peak 6e-5 for the encoder and 6e-4 for the segmentation head.
+Every 250 completed updates a replaceable resume file records model, optimizer,
+loss scaler and RNG states. Successful final exports remove that temporary file.
+
+During synthetic fitting the original 16-bit forward produced a nonfinite
+value. Training resumed from the finite model and optimizer saved at update
+7,500. On replay at update 7,674, the decoder BatchNorm running mean had an
+absolute maximum of 64,809 before the failed forward. The same augmented
+minibatch succeeded after promoting the decoder to 32-bit precision, with the
+encoder continuing in mixed precision. The retry restored the dropout random
+state and BatchNorm buffers and advanced the optimizer exactly once. Training
+then retained the promoted precision for that stage. The fine-tuning run
+encountered the same condition at update 373 and applied the same retry.
+The individual events are in each affected run's numerical-events.jsonl.
+The synthetic checkpoint recovery is recorded in runs/synthetic/recovery.json.
+The supplied training script checks for forward
+overflow before backpropagation and verifies all floating model and AdamW
+tensors at every saved checkpoint. Each guarded stage's complete.json records
+its actual final precision. The original real-only run used 16-bit mixed
+precision throughout; its exported tensors can be verified independently.
+The independent final-optimizer-audit.json confirms that all 927 parameter
+slots have finite AdamW state and the exact expected update counter for
+both affected stages. training-verification.json records the matched initial
+weights, fine-tuning lineage, final tensor finiteness and sample counts.
+
+From the project root, the following commands rerun the stages with prepared
+manifests. Set PRETRAINED to the folder containing the three pinned encoder
+files, MAN to the official real and filtered synthetic manifests, FILTERS to the
+finished filter directory, CACHE to a scratch location with at least 5 GB free,
+and RUNS to a fresh output path. Use a CUDA-enabled environment corresponding
+to the versions in the completed per-stage recipe.json records.
+
+  python get_encoder.py --output "$PRETRAINED"
+  python train.py --stage real --pretrained "$PRETRAINED" --manifests "$MAN" --filtered "$FILTERS" --cache "$CACHE" --output "$RUNS"
+  # Build, verify and finalize the synthetic-label filter using this real checkpoint.
+  python train.py --stage synthetic --pretrained "$PRETRAINED" --manifests "$MAN" --filtered "$FILTERS" --cache "$CACHE" --output "$RUNS"
+  python train.py --stage finetuned --pretrained "$PRETRAINED" --manifests "$MAN" --filtered "$FILTERS" --cache "$CACHE" --output "$RUNS"
+  python verify_training.py --study "$STUDY" --manifests "$MAN"
+
+Replace the three Python script names above with their actual paths in this
+reproduction folder. RUNS must be "$STUDY/runs". The verifier rechecks the
+source lists, classifier shape, backbone config, checkpoint digests, complete
+finite loss logs, epoch coverage, and stage-to-stage device-independent tensor
+fingerprints. The original 200,000-iteration number refers to training the TIDE
+data generator and has no role in this segmentation training chain.

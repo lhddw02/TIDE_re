@@ -1,0 +1,9 @@
+{
+  "stage": "synthetic",
+  "verified_masks": 691,
+  "foreground_miou_percent": 56.715913965130504,
+  "valid_pixels": 221806669,
+  "checkpoint_sha256": "1212f97ed1976de99928a2f620819b38ac220d3927d1239813b86e2e88afa081",
+  "manifest_sha256": "687bcd07a65e026ae203f6c6c0342fa65453ced3ff86bba56966fb73577147b0",
+  "per_image_metrics_verified": true
+}

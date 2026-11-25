@@ -1,0 +1,26 @@
+{
+  "expanded_images": 6000,
+  "unique_decoded_training_images": 6000,
+  "holdout_and_development_files_checked": 1750,
+  "train_holdout_shared_decoded_images": 0,
+  "train_holdout_pairs_from_previous_perceptual_screen": 0,
+  "within_train_rows_in_previous_pair_screen": {
+    "uiis + uiis": 880
+  },
+  "training_reference_images_with_class": {
+    "0": 5997,
+    "1": 514,
+    "2": 3423,
+    "3": 3471,
+    "4": 752,
+    "5": 828,
+    "6": 336,
+    "255": 1235
+  },
+  "valid_supervised_pixels_by_source_in_one_pass": {
+    "synthetic": 786432000,
+    "uiis": 598356586
+  },
+  "synthetic_share_of_valid_pixels_in_one_pass": 0.5679076271646855,
+  "description": "Image SHA-256 includes RGB dimensions and decoded pixels. The earlier paired perceptual screen required both pHash and dHash distances at most four bits. Source pixel counts use the original 512-pixel letterbox and ignore policy."
+}

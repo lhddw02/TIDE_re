@@ -1,0 +1,30 @@
+{
+  "seed": 17,
+  "images": 54510,
+  "batch_size": 8,
+  "fully_ignored_images": 25,
+  "epochs": [
+    {
+      "epoch": 1,
+      "batches": 6814,
+      "minimum_supervised_pixels_per_batch": 756094,
+      "zero_supervision_batches": 0,
+      "supervised_pixels_in_epoch": 10420290941
+    },
+    {
+      "epoch": 2,
+      "batches": 6814,
+      "minimum_supervised_pixels_per_batch": 783220,
+      "zero_supervision_batches": 0,
+      "supervised_pixels_in_epoch": 10420290941
+    },
+    {
+      "epoch": 3,
+      "batches": 6814,
+      "minimum_supervised_pixels_per_batch": 897170,
+      "zero_supervision_batches": 0,
+      "supervised_pixels_in_epoch": 10420290941
+    }
+  ],
+  "all_scheduled_batches_supervised": true
+}

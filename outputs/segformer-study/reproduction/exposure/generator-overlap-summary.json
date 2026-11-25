@@ -1,0 +1,47 @@
+{
+  "generator_index_photos": 14573,
+  "photos_matched_to_names_by_source": {
+    "uiis": 3937,
+    "usis10k": 9038,
+    "suim": 1598
+  },
+  "unresolved_names": [],
+  "byte_identical_images": {
+    "uiis_test": 56,
+    "deepfish_test": 0,
+    "coralscapes_test": 0
+  },
+  "decoded_pixel_identical_images": {
+    "uiis_test": 56,
+    "deepfish_test": 0,
+    "coralscapes_test": 0
+  },
+  "flagged_images": {
+    "uiis_test": 578,
+    "deepfish_test": 0,
+    "coralscapes_test": 0
+  },
+  "directly_matched_images": {
+    "uiis_test": 578,
+    "deepfish_test": 0,
+    "coralscapes_test": 0
+  },
+  "source_flags_per_split": {
+    "uiis_test": {
+      "uiis": 349,
+      "usis10k": 521,
+      "suim": 173
+    },
+    "deepfish_test": {
+      "uiis": 0,
+      "usis10k": 0,
+      "suim": 0
+    },
+    "coralscapes_test": {
+      "uiis": 0,
+      "usis10k": 0,
+      "suim": 0
+    }
+  },
+  "criteria": "pHash and dHash each within four bits, with group propagation only within UIIS perceptual components. Exact SHA-256 also recorded. This screen may miss heavily transformed images or shared sites."
+}

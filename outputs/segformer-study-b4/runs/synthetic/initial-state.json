@@ -1,0 +1,6 @@
+{
+  "stage": "synthetic",
+  "initialization": "ImageNet-1k MiT-B4 encoder, fresh seven-class SegFormer-B4 head",
+  "weights_file_sha256": "1cddf0f9ed0b7f1639a8f5e339c177673685df3e2e3c9575a649eb15bcf68a55",
+  "initialized_model_state_sha256": "16f75ca7fc438dca7270a44634dba460c46ffabfbfe235926b55775f0e9dad37"
+}

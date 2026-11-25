@@ -1,0 +1,18 @@
+{
+  "official_dataset": "https://irvlab.cs.umn.edu/resources/suim-dataset",
+  "author_archive": "https://drive.google.com/file/d/1uEnlqKrlt6lITc_i80NTtb7iHGcO47sU/view",
+  "generator_index_sha256": "bd9466c3bb0984069cdc61ec71620290f04737f4ae11f8f453f8c8287cfbd85c",
+  "raw_unique_photo_names": 1635,
+  "raw_photos_by_split": {
+    "TEST": 110,
+    "train_val": 1525
+  },
+  "generator_suim_names": 1598,
+  "matched_unique_generator_names": 1598,
+  "missing_generator_names": [],
+  "matched_photos_by_split": {
+    "train_val": 1488,
+    "TEST": 110
+  },
+  "matching_names_with_multiple_source_files": {}
+}

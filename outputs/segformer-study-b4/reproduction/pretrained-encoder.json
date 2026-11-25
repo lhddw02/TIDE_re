@@ -1,0 +1,9 @@
+{
+  "repository": "nvidia/mit-b4",
+  "revision": "3844ddaa13d9ce98816bacb904688a5284f164af",
+  "sha256": {
+    "config.json": "1c57393773ba34845f1b432d72cebbd3e991cb4371685904d9211cf042c99983",
+    "pytorch_model.bin": "1cddf0f9ed0b7f1639a8f5e339c177673685df3e2e3c9575a649eb15bcf68a55",
+    "preprocessor_config.json": "d96ab2cb112985c19d5ea32f1d1f2369104fc78b1379f5ce26e33ca8646202a7"
+  }
+}

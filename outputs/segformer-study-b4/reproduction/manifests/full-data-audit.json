@@ -1,0 +1,46 @@
+{
+  "official_uiis_train_images": 3937,
+  "official_uiis_evaluation_images": 691,
+  "synthetic_images": 54510,
+  "synthetic_caption_groups": 5451,
+  "variants_per_caption": 10,
+  "class_image_support": {
+    "uiis_train": {
+      "0": 3929,
+      "1": 148,
+      "2": 2424,
+      "3": 2713,
+      "4": 505,
+      "5": 338,
+      "6": 65
+    },
+    "synthetic": {
+      "0": 54428,
+      "1": 7205,
+      "2": 29643,
+      "3": 26617,
+      "4": 6337,
+      "5": 10061,
+      "6": 5050
+    },
+    "uiis_test": {
+      "0": 691,
+      "1": 23,
+      "2": 405,
+      "255": 276,
+      "3": 478,
+      "4": 87,
+      "5": 64,
+      "6": 15
+    }
+  },
+  "official_uiis_eval_images_matching_uiis_train_in_previous_visual_screen": 349,
+  "sha256": {
+    "real.csv": "91dd3c0cf9c556b244e0b7419c744e8cc5a83c24dd11bc346bed13a96647b743",
+    "synthetic.csv": "58980170c0ab68a1efbd6adb17e7e7471d2c60e685f21b21368b02483957a0b2",
+    "uiis_generator_overlap.csv": "1aa68274f910577c2cf270e6b9e18a5969ffb903f7497a782b2476a2d271c24d",
+    "uiis_test.csv": "687bcd07a65e026ae203f6c6c0342fa65453ced3ff86bba56966fb73577147b0"
+  },
+  "previous_validation_manifest_sha256": "687bcd07a65e026ae203f6c6c0342fa65453ced3ff86bba56966fb73577147b0",
+  "notes": "RGB mode and dimensions and all decoded mask classes/dimensions checked for each pair. All real training rows use the published TIDE generator training semantic masks with raw seafloor ID 7 merged into evaluation background 0. Original official train set retained including duplicate or near-duplicate scenes. Original visual duplicate grouping in the evaluation file is preserved. Real training groups use original file IDs. Synthetic CSV indexes original masks before the teacher filter."
+}

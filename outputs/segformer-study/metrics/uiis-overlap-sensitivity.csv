@@ -1,0 +1,43 @@
+subset,images,visual_groups,arm,metric,reference_images_with_class,seed_mean_percent,seed_sd_pp,seed_17_percent,seed_29_percent,seed_43_percent
+no_UIIS_train_match,342,324,synthetic,foreground_mIoU,,34.4354985,0.9430263,34.2434621,33.6032709,35.4597624
+no_UIIS_train_match,342,324,mixed,foreground_mIoU,,46.7732824,1.2503207,45.8001126,48.1834513,46.3362834
+no_UIIS_train_match,342,324,real,foreground_mIoU,,49.6392628,0.2882806,49.8786525,49.3192553,49.7198806
+no_UIIS_train_match,342,324,synthetic,wrecks_IoU,17,42.5168188,2.6743767,39.4396713,44.2804769,43.8303084
+no_UIIS_train_match,342,324,mixed,wrecks_IoU,17,65.6238062,1.4227193,64.0660783,66.8546028,65.9507374
+no_UIIS_train_match,342,324,real,wrecks_IoU,17,64.6932014,1.9007918,66.8316332,63.1958015,64.0521695
+no_UIIS_train_match,342,324,synthetic,fish_IoU,179,59.5087976,0.6957189,60.3114697,59.0789502,59.1359729
+no_UIIS_train_match,342,324,mixed,fish_IoU,179,65.1571083,1.6781851,63.5305792,66.8825722,65.0581735
+no_UIIS_train_match,342,324,real,fish_IoU,179,67.574629,1.4289635,66.154708,67.5567125,69.0124666
+no_UIIS_train_match,342,324,synthetic,reefs_IoU,231,43.7045101,0.6650027,43.9662893,44.1987863,42.9484547
+no_UIIS_train_match,342,324,mixed,reefs_IoU,231,51.3731444,0.3619429,51.629749,50.9591531,51.5305311
+no_UIIS_train_match,342,324,real,reefs_IoU,231,52.4443962,2.1860576,54.1885854,53.1525551,49.9920482
+no_UIIS_train_match,342,324,synthetic,aquatic plants_IoU,35,2.2785182,1.0267118,2.1842467,1.3021932,3.3491147
+no_UIIS_train_match,342,324,mixed,aquatic plants_IoU,35,9.9269781,1.7465721,10.1533925,8.0782403,11.5493015
+no_UIIS_train_match,342,324,real,aquatic plants_IoU,35,8.515417,1.1509543,8.3441479,7.4596945,9.7424086
+no_UIIS_train_match,342,324,synthetic,divers_IoU,43,51.1562484,3.5737392,48.9530184,49.236118,55.2796087
+no_UIIS_train_match,342,324,mixed,divers_IoU,43,66.4306862,2.9031622,66.9189218,69.0587748,63.3143619
+no_UIIS_train_match,342,324,real,divers_IoU,43,68.9165708,0.4436778,68.7140645,69.4253695,68.6102785
+no_UIIS_train_match,342,324,synthetic,robots_IoU,9,7.4480978,3.603245,10.6060774,3.5231011,8.2151149
+no_UIIS_train_match,342,324,mixed,robots_IoU,9,22.1279715,4.5744762,18.501955,27.2673645,20.6145949
+no_UIIS_train_match,342,324,real,robots_IoU,9,35.6913622,1.0561835,35.0387758,35.1253989,36.9099121
+no_known_generator_source_match,113,110,synthetic,foreground_mIoU,,30.2489618,2.2742275,30.5276647,27.8482271,32.3709937
+no_known_generator_source_match,113,110,mixed,foreground_mIoU,,39.4035463,2.4624173,41.8650201,39.4054322,36.9401866
+no_known_generator_source_match,113,110,real,foreground_mIoU,,42.7288055,1.3236202,44.1985619,42.3570149,41.6308399
+no_known_generator_source_match,113,110,synthetic,wrecks_IoU,3,47.1769286,5.0526439,42.002142,47.4307843,52.0978595
+no_known_generator_source_match,113,110,mixed,wrecks_IoU,3,72.3158509,1.188811,73.1548521,72.8372697,70.955431
+no_known_generator_source_match,113,110,real,wrecks_IoU,3,75.5993524,1.740513,76.1108782,77.0267833,73.6603957
+no_known_generator_source_match,113,110,synthetic,fish_IoU,57,41.3702295,1.6828258,42.667376,39.4686755,41.974637
+no_known_generator_source_match,113,110,mixed,fish_IoU,57,50.6771906,0.9400192,49.8839576,50.4321514,51.7154629
+no_known_generator_source_match,113,110,real,fish_IoU,57,52.6463483,0.846609,53.3942596,51.7272154,52.8175701
+no_known_generator_source_match,113,110,synthetic,reefs_IoU,84,42.2272764,2.5236969,44.4012771,42.8208525,39.4596997
+no_known_generator_source_match,113,110,mixed,reefs_IoU,84,48.1537375,2.3239307,50.2829136,48.5035787,45.6747201
+no_known_generator_source_match,113,110,real,reefs_IoU,84,51.1663567,4.8895647,54.2786734,53.6897764,45.5306204
+no_known_generator_source_match,113,110,synthetic,aquatic plants_IoU,15,4.8462305,3.1361967,5.7434373,1.3592074,7.4360469
+no_known_generator_source_match,113,110,mixed,aquatic plants_IoU,15,12.5554161,5.334687,18.594376,10.5881285,8.4837439
+no_known_generator_source_match,113,110,real,aquatic plants_IoU,15,14.5963295,4.1206528,16.2327043,9.9088415,17.6474427
+no_known_generator_source_match,113,110,synthetic,divers_IoU,7,45.8731059,8.8870741,48.3517556,36.009843,53.2577191
+no_known_generator_source_match,113,110,mixed,divers_IoU,7,52.7190825,7.3253629,59.2740213,54.0714646,44.8117616
+no_known_generator_source_match,113,110,real,divers_IoU,7,62.3644463,2.5715919,65.1748558,61.7894726,60.1290104
+no_known_generator_source_match,113,110,synthetic,robots_IoU,1,0.0,0.0,0.0,0.0,0.0
+no_known_generator_source_match,113,110,mixed,robots_IoU,1,0.0,0.0,0.0,0.0,0.0
+no_known_generator_source_match,113,110,real,robots_IoU,1,0.0,0.0,0.0,0.0,0.0

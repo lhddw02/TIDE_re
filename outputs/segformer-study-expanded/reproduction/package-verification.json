@@ -1,0 +1,105 @@
+{
+  "archived_original_unchanged": true,
+  "new_checkpoints": 3,
+  "new_predictions_verified": 4050,
+  "headline_means_recomputed": 16,
+  "paired_headline_differences_recomputed": 12,
+  "local_report_links_verified": 12,
+  "images_in_html": 2,
+  "score_means_percent": {
+    "uiis_test": {
+      "synthetic": 34.92673890648094,
+      "mixed": 46.78284874958095,
+      "real": 49.30322635861592,
+      "combined": 48.54312305122958
+    },
+    "uiis_without_generator_match": {
+      "synthetic": 30.248961825568426,
+      "mixed": 39.403546276746034,
+      "real": 42.7288055419325,
+      "combined": 40.26027146230364
+    },
+    "deepfish_test": {
+      "synthetic": 45.78727665755877,
+      "mixed": 53.410120026187094,
+      "real": 53.05931467151018,
+      "combined": 56.48606217315933
+    },
+    "coralscapes_test": {
+      "synthetic": 3.544389311511298,
+      "mixed": 4.281030880604315,
+      "real": 6.116424750595914,
+      "combined": 4.906018747402665
+    }
+  },
+  "new_minus_comparator_pp_and_paired_95pct_interval": {
+    "uiis_test": {
+      "mixed": [
+        1.7602743016,
+        -2.3820578906,
+        4.3734178191
+      ],
+      "real": [
+        -0.7601033074,
+        -5.1192514114,
+        2.6951394488
+      ],
+      "synthetic": [
+        13.6163841447,
+        9.8527946992,
+        16.6235576892
+      ]
+    },
+    "uiis_without_generator_match": {
+      "mixed": [
+        0.8567251856,
+        -0.9426834743,
+        4.3299781134
+      ],
+      "real": [
+        -2.4685340796,
+        -6.8537556634,
+        2.0801070915
+      ],
+      "synthetic": [
+        10.0113096367,
+        5.0154704414,
+        15.0784655844
+      ]
+    },
+    "deepfish_test": {
+      "mixed": [
+        3.075942147,
+        0.9663181526,
+        5.8369204425
+      ],
+      "real": [
+        3.4267475016,
+        -0.2912829548,
+        7.5699164662
+      ],
+      "synthetic": [
+        10.6987855156,
+        6.144659244,
+        14.5090237318
+      ]
+    },
+    "coralscapes_test": {
+      "mixed": [
+        0.6249878668,
+        -0.110640957,
+        1.5917980574
+      ],
+      "real": [
+        -1.2104060032,
+        -2.6161622188,
+        -0.3665113552
+      ],
+      "synthetic": [
+        1.3616294359,
+        0.2802034286,
+        4.5555859333
+      ]
+    }
+  }
+}

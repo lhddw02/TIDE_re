@@ -5,6 +5,23 @@
 [![arXiv](https://img.shields.io/badge/Arxiv-2503.21771-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2503.21771)
 [![License](https://img.shields.io/badge/License-Apache--2.0-929292)](https://www.apache.org/licenses/LICENSE-2.0)
 
+## SegFormer evaluation on UIIS
+
+This repository includes our evaluation of the authors’ released SynTIDE dataset. The B4 runs used one seed and evaluated all three checkpoints on the same 691 UIIS images. The metric averages IoU across six foreground classes. [Original TIDE repository](https://github.com/HongkLin/TIDE)
+
+| Training stage | Our B4 mIoU | TIDE Table 3 |
+|---|---:|---:|
+| UIIS real images | 54.52% | 70.2% |
+| Full SynTIDE pretraining | 56.72% | 76.5% |
+| SynTIDE followed by UIIS fine-tuning | 56.82% | 75.4% |
+
+The fine-tuned model gained 2.29 percentage points over the real-only baseline. Its paired 95% interval across evaluation groups was −1.90 to +5.86 points. The B0 and B4 reports document the data, training schedules and evaluation details.
+
+- [B4 stage metrics](outputs/segformer-study-b4/metrics/stage-comparison.csv) and [full B4 report](outputs/segformer-study-b4/report.html)
+- [B0 baseline report](outputs/segformer-study/report.html) and [expanded B0 comparison](outputs/segformer-study-expanded/report.html)
+
+Open the HTML reports locally after cloning to view their charts. The repository includes the reports, metrics, selected examples and reproduction scripts. Links in the reports to trained weights, prediction sets or label archives refer to the full local experiment. The scripts rebuild the machine-specific manifests from the source datasets. [SynTIDE download](https://huggingface.co/datasets/hongk1998/TIDE)
+
 ## 🌊 **Introduction** 
 We present TIDE, a unified underwater image-dense annotation generation model. Its core lies in the shared layout information and the natural complementarity between multimodal features. Our model, derived from the pre-trained text-to-image model and fine-tuned with underwater data, enables the generation of highly consistent underwater image-dense annotations from solely text conditions.
 
@@ -25,7 +42,7 @@ conda create -n TIDE python=3.9
 conda activate TIDE
 conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
 
-git clone https://github.com/HongkLin/TIDE
+git clone https://github.com/lhddw02/TIDE_re.git TIDE
 cd TIDE
 pip install -r requirements.txt
 ```

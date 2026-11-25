@@ -1,0 +1,57 @@
+# Local datasets and downloaded annotations. Keep the dataset loader source.
+/SynTIDE/
+/SynTIDE_Caption.json
+/DeepFish/
+/UIIS/
+/USIS10K/
+/SUIM/
+/Coralscapes*/
+/Training_TIDE_Data/
+/data/
+/datasets/**
+!/datasets/**/
+!/datasets/**/*.py
+/work/
+
+# Downloaded weights, checkpoints and bulk archives.
+/model_weights/
+/pretrained_model/
+/checkpoints/
+checkpoint-*/
+*.safetensors
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.onnx
+*.zip
+*.tar
+*.tar.*
+*.tgz
+*.gz
+*.7z
+*.rar
+*.npy
+*.npz
+!/outputs/segformer-study*/metrics/**/*.npz
+
+# Publish study reports, metrics, scripts and individual inference examples.
+# Dense predictions, training targets and manifests with local paths stay on disk.
+/outputs/**/predictions/
+/outputs/**/training-targets/
+/outputs/**/reproduction/manifests/*.csv
+/outputs/**/reproduction/uiis_author_style_validation.csv
+/outputs/**/metrics/author-style/available-stages.csv
+/outputs/tide_r*/
+
+# Caches, credentials and environment files.
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+.venv/
+.env
+.env.*
+!.env.example
+wandb/
+*.log

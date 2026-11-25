@@ -1,0 +1,22 @@
+{
+  "stage": "synthetic",
+  "seed": 17,
+  "updates": 20442,
+  "input_side": 512,
+  "images": 691,
+  "device": "cpu",
+  "precision": "float32",
+  "checkpoint_sha256": "1212f97ed1976de99928a2f620819b38ac220d3927d1239813b86e2e88afa081",
+  "manifest_sha256": "687bcd07a65e026ae203f6c6c0342fa65453ced3ff86bba56966fb73577147b0",
+  "valid_pixels": 221806669,
+  "foreground_miou_percent": 56.715913965130504,
+  "iou_percent": {
+    "background": 82.52668459322763,
+    "wrecks": 69.92629787951697,
+    "fish": 76.68963154745168,
+    "reefs": 55.517954890165896,
+    "aquatic plants": 33.7106604240322,
+    "divers": 77.769834809817,
+    "robots": 26.68110423979923
+  }
+}

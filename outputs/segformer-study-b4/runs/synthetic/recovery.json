@@ -1,0 +1,12 @@
+{
+  "initial_exception": "Non-finite 25-update mean loss detected in progress window ending at 7700; final published log before exception ended at step 7675.",
+  "restored_step": 7500,
+  "restored_state": "Model, AdamW and its moments, adaptive gradient scaler, and CPU/CUDA RNG states",
+  "restored_state_sha256": "7a3bd1160a3ae9e9f98eab448ccb59288eb25de18ae10b830f936790b58f0608",
+  "restored_gradient_scale": 1024,
+  "restored_singular_max_abs_parameter_or_buffer": 59407.66015625,
+  "largest_absolute_state_tensor": "decode_head.batch_norm.running_mean",
+  "largest_running_variance": 36375.06640625,
+  "all_model_and_optimizer_tensors_verified_finite": true,
+  "policy": "Per-forward guard checks logits, loss and decoder BN statistics before backward. Retries on the same already-augmented input restore CUDA dropout RNG and BN running state. A nonfinite FP16 forward promotes decoder computation to FP32 for the rest of the stage; full FP32 is the second fallback. The gradient scaler retries gradient overflow at a lower scale. Completed snapshots verify every floating optimizer and model tensor. See numerical-events.jsonl for events actually encountered during the replay."
+}

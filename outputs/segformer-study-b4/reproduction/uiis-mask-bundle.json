@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "train-author": 3937,
+    "validation-primary": 691,
+    "validation-inferred": 691
+  },
+  "verified_native_masks": 5319,
+  "archive_sha256": "ba9e5a35dc0acc44a55176bd030f79bf99ea3a4bba8171367a007d11d1f981d4",
+  "train_author": "Native UIIS generator-training semantic annotations from the original TIDE release. Index 7 maps to class 0.",
+  "validation_primary": "The existing study's 691 derived ground-truth masks. Crowd and conflicting pixels are excluded.",
+  "validation_inferred": "Secondary rendering of the same 691 official instance annotations. The conversion reproduces all generator-training targets exactly. These are not author-provided validation masks."
+}

@@ -1,0 +1,4 @@
+image_id,group,reference_stratum,no_detected_uiis_train_match,no_detected_generator_match
+uiis_val_L_906,uiis_val_L_906,Fish,1,1
+uiis_val_XL_915,uiis_val_XL_915,Divers,1,0
+uiis_val_XL_1775,uiis_val_XL_1775,Robots,1,0

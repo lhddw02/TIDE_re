@@ -1,0 +1,203 @@
+{
+  "new_runs_verified": 3,
+  "new_optimizer_updates": 12000,
+  "native_masks_independently_rescored": 4050,
+  "per_image_csvs_confusions_negatives_agree": true,
+  "same_test_sets_and_model_recipe_as_original": true,
+  "combined_manifest_sha256": "d684883e43053e7cafaa6cd70ad68a8f61ce48484760f1888a1de5318f5bf139",
+  "unique_training_examples": 6000,
+  "runs": [
+    {
+      "seed": 17,
+      "checkpoint_sha256": "00c12e36d78fbdee02230c870aad39e2d075e6db1973cc02da28f56866c765ee",
+      "updates": 4000,
+      "splits": {
+        "uiis_test": {
+          "manifest_sha256": "687bcd07a65e026ae203f6c6c0342fa65453ced3ff86bba56966fb73577147b0",
+          "native_masks": 691,
+          "valid_pixels": 221806669,
+          "pooled_scores_from_saved_masks": {
+            "foreground_mIoU": 0.48262310467620434,
+            "fish_IoU": 0.6990637538419109,
+            "fish_precision": 0.8257985522951596,
+            "fish_recall": 0.819984255756319,
+            "fish_Dice": 0.8228811335197904,
+            "negative_fish_area": 0.00596508369839584,
+            "iou_wrecks": 0.5947627535667096,
+            "iou_fish": 0.6990637538419109,
+            "iou_reefs": 0.5182087248680981,
+            "iou_aquatic_plants": 0.10857938377421102,
+            "iou_divers": 0.7370139005540655,
+            "iou_robots": 0.23811011145223096
+          }
+        },
+        "deepfish_test": {
+          "manifest_sha256": "957e57a0f251585c2544a9a623be890f1e80714cbd6cc1a7854b747f38eac593",
+          "native_masks": 186,
+          "valid_pixels": 385689600,
+          "pooled_scores_from_saved_masks": {
+            "foreground_mIoU": null,
+            "fish_IoU": 0.5738774602445474,
+            "fish_precision": 0.7721461674387894,
+            "fish_recall": 0.6908745892693758,
+            "fish_Dice": 0.7292530387408673,
+            "negative_fish_area": 0.00135221622085048,
+            "iou_wrecks": null,
+            "iou_fish": 0.5738774602445474,
+            "iou_reefs": null,
+            "iou_aquatic_plants": null,
+            "iou_divers": null,
+            "iou_robots": null
+          }
+        },
+        "coralscapes_test": {
+          "manifest_sha256": "3f73c6460298d8c8e95ad230fad682d85ce1c941b09019d4723930a2813359a4",
+          "native_masks": 473,
+          "valid_pixels": 843144589,
+          "pooled_scores_from_saved_masks": {
+            "foreground_mIoU": null,
+            "fish_IoU": 0.044244637188253666,
+            "fish_precision": 0.13730830929942653,
+            "fish_recall": 0.06127928303712097,
+            "fish_Dice": 0.08473998450667142,
+            "negative_fish_area": 0.011350739659449723,
+            "iou_wrecks": null,
+            "iou_fish": 0.044244637188253666,
+            "iou_reefs": null,
+            "iou_aquatic_plants": null,
+            "iou_divers": null,
+            "iou_robots": null
+          }
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "checkpoint_sha256": "9094664676fcec2af9383f52efb99b818da46a2c3420dbe935284074df5ba2ec",
+      "updates": 4000,
+      "splits": {
+        "uiis_test": {
+          "manifest_sha256": "687bcd07a65e026ae203f6c6c0342fa65453ced3ff86bba56966fb73577147b0",
+          "native_masks": 691,
+          "valid_pixels": 221806669,
+          "pooled_scores_from_saved_masks": {
+            "foreground_mIoU": 0.4787781951160068,
+            "fish_IoU": 0.698923518190063,
+            "fish_precision": 0.8183573328032484,
+            "fish_recall": 0.8272587557817092,
+            "fish_Dice": 0.8227839696217245,
+            "negative_fish_area": 0.006589385516880675,
+            "iou_wrecks": 0.627828800493136,
+            "iou_fish": 0.698923518190063,
+            "iou_reefs": 0.517422248348163,
+            "iou_aquatic_plants": 0.07776604864097986,
+            "iou_divers": 0.7091495398398172,
+            "iou_robots": 0.2415790151838816
+          }
+        },
+        "deepfish_test": {
+          "manifest_sha256": "957e57a0f251585c2544a9a623be890f1e80714cbd6cc1a7854b747f38eac593",
+          "native_masks": 186,
+          "valid_pixels": 385689600,
+          "pooled_scores_from_saved_masks": {
+            "foreground_mIoU": null,
+            "fish_IoU": 0.5627715631647505,
+            "fish_precision": 0.768540501222683,
+            "fish_recall": 0.67762048421517,
+            "fish_Dice": 0.7202224258868498,
+            "negative_fish_area": 0.0012094103652263374,
+            "iou_wrecks": null,
+            "iou_fish": 0.5627715631647505,
+            "iou_reefs": null,
+            "iou_aquatic_plants": null,
+            "iou_divers": null,
+            "iou_robots": null
+          }
+        },
+        "coralscapes_test": {
+          "manifest_sha256": "3f73c6460298d8c8e95ad230fad682d85ce1c941b09019d4723930a2813359a4",
+          "native_masks": 473,
+          "valid_pixels": 843144589,
+          "pooled_scores_from_saved_masks": {
+            "foreground_mIoU": null,
+            "fish_IoU": 0.05339013469557633,
+            "fish_precision": 0.18891967320266342,
+            "fish_recall": 0.0692674418796613,
+            "fish_Dice": 0.10136820715718166,
+            "negative_fish_area": 0.009714289457414675,
+            "iou_wrecks": null,
+            "iou_fish": 0.05339013469557633,
+            "iou_reefs": null,
+            "iou_aquatic_plants": null,
+            "iou_divers": null,
+            "iou_robots": null
+          }
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "checkpoint_sha256": "0d7aa4411408f004129a6d30858aee6c0b7c0bb1342452263709c8eb232a9f08",
+      "updates": 4000,
+      "splits": {
+        "uiis_test": {
+          "manifest_sha256": "687bcd07a65e026ae203f6c6c0342fa65453ced3ff86bba56966fb73577147b0",
+          "native_masks": 691,
+          "valid_pixels": 221806669,
+          "pooled_scores_from_saved_masks": {
+            "foreground_mIoU": 0.4948923917446762,
+            "fish_IoU": 0.7015399965165091,
+            "fish_precision": 0.8167982488933513,
+            "fish_recall": 0.8325403795213473,
+            "fish_Dice": 0.8245941887381341,
+            "negative_fish_area": 0.006162550714029077,
+            "iou_wrecks": 0.6281892163908049,
+            "iou_fish": 0.7015399965165091,
+            "iou_reefs": 0.5112333578889042,
+            "iou_aquatic_plants": 0.11889705589748127,
+            "iou_divers": 0.7182364420436377,
+            "iou_robots": 0.29125828173072005
+          }
+        },
+        "deepfish_test": {
+          "manifest_sha256": "957e57a0f251585c2544a9a623be890f1e80714cbd6cc1a7854b747f38eac593",
+          "native_masks": 186,
+          "valid_pixels": 385689600,
+          "pooled_scores_from_saved_masks": {
+            "foreground_mIoU": null,
+            "fish_IoU": 0.5579328417854824,
+            "fish_precision": 0.7688255331738679,
+            "fish_recall": 0.6704007084403415,
+            "fish_Dice": 0.7162476158421035,
+            "negative_fish_area": 0.0011713338048696845,
+            "iou_wrecks": null,
+            "iou_fish": 0.5579328417854824,
+            "iou_reefs": null,
+            "iou_aquatic_plants": null,
+            "iou_divers": null,
+            "iou_robots": null
+          }
+        },
+        "coralscapes_test": {
+          "manifest_sha256": "3f73c6460298d8c8e95ad230fad682d85ce1c941b09019d4723930a2813359a4",
+          "native_masks": 473,
+          "valid_pixels": 843144589,
+          "pooled_scores_from_saved_masks": {
+            "foreground_mIoU": null,
+            "fish_IoU": 0.04954579053824994,
+            "fish_precision": 0.14225558728079943,
+            "fish_recall": 0.07065266139891625,
+            "fish_Dice": 0.09441377591127459,
+            "negative_fish_area": 0.010811112415446437,
+            "iou_wrecks": null,
+            "iou_fish": 0.04954579053824994,
+            "iou_reefs": null,
+            "iou_aquatic_plants": null,
+            "iou_divers": null,
+            "iou_robots": null
+          }
+        }
+      }
+    }
+  ]
+}

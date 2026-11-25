@@ -1,0 +1,9 @@
+{
+  "archived_directory": "segformer-study",
+  "archived_files": 12339,
+  "archive_sha256": "7e27967f192059925dba36096ea5faf41d7e470c89983a5f164b800c87e12f57",
+  "report_sha256": "5b4779f66da0ee1a98e56cd3519d9c1811f92450e6675bef8f54c51ef0ad553c",
+  "models": 9,
+  "prediction_masks": 12150,
+  "every_file_verified_after_archiving": true
+}

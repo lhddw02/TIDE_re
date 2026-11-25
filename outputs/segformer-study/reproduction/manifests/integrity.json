@@ -1,0 +1,63 @@
+{
+  "decode_checked_unique_ids": 7750,
+  "train_eval_exact_rgb_overlaps": 0,
+  "histogram_groups_by_image_count": {
+    "synthetic": {
+      "1": 3000
+    },
+    "mixed": {
+      "1": 3000
+    },
+    "real": {
+      "1": 1555,
+      "2": 565,
+      "3": 105
+    },
+    "uiis_dev": {
+      "1": 190,
+      "2": 76,
+      "3": 14,
+      "4": 4
+    },
+    "uiis_test": {
+      "1": 608,
+      "2": 40,
+      "3": 1
+    },
+    "deepfish_test": {
+      "1": 13,
+      "2": 8,
+      "3": 5,
+      "4": 8,
+      "5": 4,
+      "6": 5,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "11": 1,
+      "12": 1,
+      "13": 1
+    },
+    "coralscapes_test": {
+      "41": 1,
+      "42": 1,
+      "53": 1,
+      "151": 1,
+      "186": 1
+    }
+  },
+  "manifest_sha256": {
+    "synthetic": "e833c2cdc67fab56cbad6eea0db83ec4411c2444bf528b21a856bc820ed07562",
+    "mixed": "ff6b030c6b6aa4a218cd5168a1920cbe3a24c1bf55832a19074b75a65a3697f9",
+    "real": "5d3473fd5aac83f7f4d8483249ba41b4751f40760fb36585c88235bb4d5769dd",
+    "uiis_dev": "10b400a5207ad88240704350bcb2756bc37d8d474658f1f5839660ffa7b6e729",
+    "uiis_test": "687bcd07a65e026ae203f6c6c0342fa65453ced3ff86bba56966fb73577147b0",
+    "deepfish_test": "957e57a0f251585c2544a9a623be890f1e80714cbd6cc1a7854b747f38eac593",
+    "coralscapes_test": "3f73c6460298d8c8e95ad230fad682d85ce1c941b09019d4723930a2813359a4"
+  },
+  "raw_uiis_train_holdout_pair_matches": {
+    "perceptual": 518,
+    "byte-identical": 1
+  },
+  "uiis_holdout_frames_matching_original_uiis_training_component": 349
+}

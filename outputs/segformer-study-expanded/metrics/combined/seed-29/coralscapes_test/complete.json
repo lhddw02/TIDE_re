@@ -1,0 +1,1 @@
+{"images": 473, "input_side": 512, "seed": 29, "arm": "combined", "split": "coralscapes_test", "device": "cuda", "manifest_sha256": "3f73c6460298d8c8e95ad230fad682d85ce1c941b09019d4723930a2813359a4", "checkpoint_sha256": "9094664676fcec2af9383f52efb99b818da46a2c3420dbe935284074df5ba2ec"}

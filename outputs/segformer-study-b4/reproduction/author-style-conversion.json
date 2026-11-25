@@ -1,0 +1,17 @@
+{
+  "pillow_version": "10.2.0",
+  "training_images_checked": 3937,
+  "exact_raw_seven_foreground_and_seafloor_plus_background_masks": 3937,
+  "compared_native_training_pixels": 1353146800,
+  "disagreeing_pixels": 0,
+  "train_json_sha256": "9cc586e559f54533a938e34a89017d47784c3646bc43ab2cd0d88e140ef5b49d",
+  "raw_training_targets": "TIDE generator-training release, including sea floor class 7",
+  "candidate_conversion": "Draw the first polygon of each COCO annotation with Pillow ImageDraw.polygon, coordinates truncated to integers, preserving annotation order and including crowd polygons. Later polygons overwrite earlier ones.",
+  "validation_images": 691,
+  "validation_json_sha256": "5ed740baa1aa857058285d5947aa480774902af596e8b7effab50e631960e4a2",
+  "validation_pixels_scored_by_primary": 221806669,
+  "validation_disagreement_on_primary_valid_pixels": 1055800,
+  "pixels_ignored_by_primary_but_scored_by_secondary": 2996125,
+  "derived_validation_mask_set_digest": "568585771888c3fdff57fa15d903fbeb21915aba162eadf2c26e3ea5971f6af5",
+  "use": "Secondary test-label sensitivity only. The held-out author-converted downstream semantic PNGs are unavailable. The same 691 photos are used; primary scores keep the previous local UIIS labeling policy."
+}

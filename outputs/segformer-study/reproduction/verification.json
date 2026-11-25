@@ -1,0 +1,90 @@
+{
+  "final_checkpoints": 9,
+  "total_optimizer_updates": 36000,
+  "scored_image_checkpoint_pairs": 12150,
+  "native_masks_independently_rescored": 12150,
+  "training_budgets_and_subset_nesting_verified": true,
+  "runs": [
+    {
+      "arm": "synthetic",
+      "seed": 17,
+      "mask_counts": {
+        "uiis_test": 691,
+        "deepfish_test": 186,
+        "coralscapes_test": 473
+      }
+    },
+    {
+      "arm": "synthetic",
+      "seed": 29,
+      "mask_counts": {
+        "uiis_test": 691,
+        "deepfish_test": 186,
+        "coralscapes_test": 473
+      }
+    },
+    {
+      "arm": "synthetic",
+      "seed": 43,
+      "mask_counts": {
+        "uiis_test": 691,
+        "deepfish_test": 186,
+        "coralscapes_test": 473
+      }
+    },
+    {
+      "arm": "mixed",
+      "seed": 17,
+      "mask_counts": {
+        "uiis_test": 691,
+        "deepfish_test": 186,
+        "coralscapes_test": 473
+      }
+    },
+    {
+      "arm": "mixed",
+      "seed": 29,
+      "mask_counts": {
+        "uiis_test": 691,
+        "deepfish_test": 186,
+        "coralscapes_test": 473
+      }
+    },
+    {
+      "arm": "mixed",
+      "seed": 43,
+      "mask_counts": {
+        "uiis_test": 691,
+        "deepfish_test": 186,
+        "coralscapes_test": 473
+      }
+    },
+    {
+      "arm": "real",
+      "seed": 17,
+      "mask_counts": {
+        "uiis_test": 691,
+        "deepfish_test": 186,
+        "coralscapes_test": 473
+      }
+    },
+    {
+      "arm": "real",
+      "seed": 29,
+      "mask_counts": {
+        "uiis_test": 691,
+        "deepfish_test": 186,
+        "coralscapes_test": 473
+      }
+    },
+    {
+      "arm": "real",
+      "seed": 43,
+      "mask_counts": {
+        "uiis_test": 691,
+        "deepfish_test": 186,
+        "coralscapes_test": 473
+      }
+    }
+  ]
+}

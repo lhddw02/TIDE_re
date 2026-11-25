@@ -1,0 +1,92 @@
+{
+  "protocol": "Paper-guided SegFormer-B4 UIIS reproduction",
+  "model": {
+    "architecture": "SegFormer-B4",
+    "encoder": "nvidia/mit-b4 ImageNet-1k",
+    "encoder_lock": {
+      "repository": "nvidia/mit-b4",
+      "revision": "3844ddaa13d9ce98816bacb904688a5284f164af",
+      "sha256": {
+        "config.json": "1c57393773ba34845f1b432d72cebbd3e991cb4371685904d9211cf042c99983",
+        "pytorch_model.bin": "1cddf0f9ed0b7f1639a8f5e339c177673685df3e2e3c9575a649eb15bcf68a55",
+        "preprocessor_config.json": "d96ab2cb112985c19d5ea32f1d1f2369104fc78b1379f5ce26e33ca8646202a7"
+      }
+    },
+    "seed": 17,
+    "seven_outputs": [
+      "background/seafloor",
+      "wrecks",
+      "fish",
+      "reefs",
+      "aquatic plants",
+      "human divers",
+      "robots"
+    ]
+  },
+  "stages": [
+    {
+      "name": "real",
+      "training_photos": 3937,
+      "source": "official UIIS train",
+      "training_target": "published TIDE UIIS generator-training masks, mapped 7→0",
+      "steps": 4000,
+      "initialization": "ImageNet encoder and fresh segmentation decoder"
+    },
+    {
+      "name": "synthetic",
+      "training_photos": 54510,
+      "source": "full SynTIDE RGB/label release (5451 captions x 10 variants)",
+      "teacher": "frozen B4 real stage solely for synthetic-target filtering",
+      "passes": 3,
+      "updates_per_pass": 6814,
+      "batch_sizes": "8 with a final batch of 6 each pass",
+      "steps": 20442,
+      "initialization": "same ImageNet encoder and fresh segmentation decoder as real-only"
+    },
+    {
+      "name": "finetuned",
+      "training_photos": 3937,
+      "source": "same UIIS images and masks as real-only",
+      "steps": 4000,
+      "initialization": "complete final synthetic stage, including head and model buffers",
+      "optimizer": "fresh, identical real-stage schedule"
+    }
+  ],
+  "mask_filter": {
+    "threshold": "1.5 x mean of teacher cross-entropy, separately for each reference class, on UIIS TRAIN pixels (including valid background). Set synthetic labels above threshold to 255.",
+    "basis": "The public FreeMask filter.py calibrates on real masks, whereas §3.2 of the FreeMask paper describes calibration on synthetic pixels. TIDE specifies only the factor 1.5. We follow the reference implementation with TIDE's factor. Teacher trained on the full real training set; synthetic-pretrain student sees synthetic RGB only."
+  },
+  "eval": {
+    "primary": "Same previously frozen 691 UIIS validation images/semantic PNGs, six foreground class IoUs over pooled valid pixels, native resolution. Score index 0 background as a possible false positive for foreground. Omit index 255. Same single-scale input size 512 across all stages.",
+    "secondary_target": "Independently derived polygon conversion reproducing all published UIIS generator-training masks exactly, in Pillow 10.2. Original downstream validation PNGs unavailable.",
+    "secondary_cohorts": [
+      "113 images with no detected generator training photo match",
+      "342 images with no original UIIS train match"
+    ]
+  },
+  "choices_not_specified_in_TIDE_Table_3": [
+    "downstream pretraining duration and real-stage optimizer schedule",
+    "specific encoder initialization checkpoint",
+    "downstream training/augmentation hyperparameters",
+    "exact fine-tuning seed and model-selection rule",
+    "background + annotation conflict policies of the authors' held-out evaluator",
+    "specific teacher/checkpoint and numerical class thresholds for synthetic filtering"
+  ],
+  "published_comparators": {
+    "table": 3,
+    "metric": "UIIS six-class mean IoU (%)",
+    "real": 70.2,
+    "synthetic": 76.5,
+    "finetuned": 75.4
+  },
+  "sources": {
+    "TIDE_paper": "https://openaccess.thecvf.com/content/CVPR2025/papers/Lin_A_Unified_Image-Dense_Annotation_Generation_Model_for_Underwater_Scenes_CVPR_2025_paper.pdf#page=7",
+    "training_stages": "https://github.com/HongkLin/TIDE/issues/7#issuecomment-3501735490",
+    "real_set_definition": "https://github.com/HongkLin/TIDE/issues/7#issuecomment-3477480332",
+    "number_of_variations": "https://github.com/HongkLin/TIDE/issues/4#issuecomment-2994279572",
+    "FreeMask_filter": "https://github.com/LiheYoung/FreeMask/blob/main/preprocess/filter.py#L62-L101",
+    "FreeMask_paper": "https://arxiv.org/html/2310.15160#S3.SS2",
+    "UIIS_evaluation_request": "https://github.com/HongkLin/TIDE/issues/9",
+    "public_mask_archive": "https://huggingface.co/datasets/hongk1998/TIDE/resolve/e4dcdcc9c3475b548330d196ba92a232b3881c29/Training_TIDE_Data.zip"
+  }
+}

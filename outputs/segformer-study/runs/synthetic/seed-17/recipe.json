@@ -1,0 +1,48 @@
+{
+  "arm": "synthetic",
+  "seed": 17,
+  "updates": 4000,
+  "side": 512,
+  "batch_size": 8,
+  "classes": [
+    "background",
+    "wrecks",
+    "fish",
+    "reefs",
+    "aquatic plants",
+    "human divers",
+    "robots"
+  ],
+  "ignore": 255,
+  "label_budget": {
+    "synthetic": 3000
+  },
+  "manifest_sha256": "e833c2cdc67fab56cbad6eea0db83ec4411c2444bf528b21a856bc820ed07562",
+  "init_weights_sha256": "4af8348c2a802bf76115d34797ff5ce1d9f110bb8593c22d9b66d8bd7fa227fc",
+  "initialization": "nvidia/mit-b0 ImageNet-1k encoder and randomly initialized default SegFormer-B0 segmentation head",
+  "optimizer": "AdamW fused, beta=(0.9,0.999), eps=1e-8, weight decay=0.01 on multidimensional parameters",
+  "schedule": "100 update linear warmup then linear decay, peak 6e-5 encoder and 6e-4 decoder",
+  "loss": "unweighted pixel cross entropy, bilinear logits align_corners=False",
+  "preprocess": "PIL RGB bilinear long-side resize, centered square padding, nearest-neighbor mask resize",
+  "pad_rgb": [
+    124,
+    116,
+    104
+  ],
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "augmentation": "independent horizontal flip p=0.5, gain U(0.9,1.1) and shift U(-0.05,0.05) in [0,1] RGB",
+  "sampling": "per-source seeded random permutations without replacement then reshuffle, equal mixed sources per batch",
+  "precision": "float16 autocast with adaptive gradient scaling, FP32 loss and parameters; fused scaled-dot-product attention; TF32 allowed",
+  "torch": "2.0.1+cu118",
+  "transformers": "4.41.2",
+  "gpu": "NVIDIA GeForce RTX 3090 Ti"
+}

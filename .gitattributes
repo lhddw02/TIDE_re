@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Published verification records refer to the exact bytes of the experiment outputs.
+outputs/** -text

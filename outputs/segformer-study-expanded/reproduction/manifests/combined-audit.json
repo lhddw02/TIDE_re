@@ -1,0 +1,29 @@
+{
+  "frozen_manifest_sha256": "d684883e43053e7cafaa6cd70ad68a8f61ce48484760f1888a1de5318f5bf139",
+  "unique_training_ids": 6000,
+  "images_by_source": {
+    "synthetic": 3000,
+    "uiis": 3000
+  },
+  "source_pools": [
+    "synthetic",
+    "real"
+  ],
+  "contains_all_previous_mixed_ids": true,
+  "overlap_with_reserved_ids": 0,
+  "previous_mixed_ids": 3000,
+  "distinct_groups_by_source": {
+    "synthetic": 3000,
+    "uiis": 2225
+  },
+  "source_manifest_sha256": {
+    "synthetic": "e833c2cdc67fab56cbad6eea0db83ec4411c2444bf528b21a856bc820ed07562",
+    "mixed": "ff6b030c6b6aa4a218cd5168a1920cbe3a24c1bf55832a19074b75a65a3697f9",
+    "real": "5d3473fd5aac83f7f4d8483249ba41b4751f40760fb36585c88235bb4d5769dd",
+    "uiis_dev": "10b400a5207ad88240704350bcb2756bc37d8d474658f1f5839660ffa7b6e729",
+    "uiis_test": "687bcd07a65e026ae203f6c6c0342fa65453ced3ff86bba56966fb73577147b0",
+    "deepfish_test": "957e57a0f251585c2544a9a623be890f1e80714cbd6cc1a7854b747f38eac593",
+    "coralscapes_test": "3f73c6460298d8c8e95ad230fad682d85ce1c941b09019d4723930a2813359a4"
+  },
+  "description": "Each original pure-arm row appears once. Four synthetic and four real examples are sampled per training batch."
+}

@@ -1,0 +1,8 @@
+{
+  "first_step_with_guards": 7501,
+  "initial_mode": "amp_fp16",
+  "loss_and_batchnorm_guard": "Validate logits, loss, running mean and running variance before backward",
+  "retry": "Restore dropout CUDA RNG, BatchNorm running buffers and counter before replay of same augmented batch",
+  "fallback": "For nonfinite forward, use FP32 decoder with AMP FP16 encoder, then full FP32 if needed",
+  "checked_at_checkpoint": "All floating model parameters/buffers and all AdamW moment/step tensors"
+}

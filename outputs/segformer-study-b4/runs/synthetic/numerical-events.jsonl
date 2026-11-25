@@ -1,0 +1,2 @@
+{"step": 7674, "issue": "nonfinite_forward", "attempt": 1, "mode": "amp_fp16", "gradient_scale": 1024.0, "images": 8, "starting_bn_abs_mean_max": 64809.375, "fallback_mode": "fp32_decoder"}
+{"step": 18963, "issue": "scaled_gradient_overflow", "attempt": 1, "mode": "fp32_decoder", "gradient_scale": 32768.0, "images": 8, "starting_bn_abs_mean_max": 60848.5}

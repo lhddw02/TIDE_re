@@ -1,0 +1,23 @@
+{
+  "python": "3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]",
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "training_environment": {
+    "torch": "2.0.1+cu118",
+    "torchvision": "0.15.2+cu118",
+    "transformers": "4.41.2",
+    "numpy": "1.26.4",
+    "Pillow": "10.2.0",
+    "safetensors": "0.7.0",
+    "accelerate": "0.31.0",
+    "huggingface-hub": "0.25.2"
+  },
+  "tide_git_commit": "d0cba53604b3dd9e16e4f81ce24d7f4be3ba0d4e",
+  "dataset_sources": {
+    "syntide": "https://huggingface.co/datasets/hongk1998/TIDE",
+    "uiis": "https://huggingface.co/datasets/LiamLian0727/UIIS",
+    "deepfish": "https://alzayats.github.io/DeepFish/",
+    "coralscapes": "https://huggingface.co/datasets/josauder/coralscapesV2",
+    "initialization": "https://huggingface.co/nvidia/mit-b0"
+  },
+  "syntide_generator_training_exposure": "UIIS train, SUIM splits listed in Table 1 and the USIS10K train and test splits were used to train TIDE. Synthetic-only describes downstream mask supervision."
+}

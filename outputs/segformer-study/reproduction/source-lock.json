@@ -1,0 +1,44 @@
+[
+  {
+    "name": "uiis/train.json",
+    "url": "https://huggingface.co/datasets/LiamLian0727/UIIS/resolve/44ca5db46599f14faf8e57643014664435823738/annotations/train.json",
+    "size": 106877699,
+    "sha256": "9cc586e559f54533a938e34a89017d47784c3646bc43ab2cd0d88e140ef5b49d"
+  },
+  {
+    "name": "uiis/train.parquet",
+    "url": "https://huggingface.co/api/datasets/LiamLian0727/UIIS/parquet/default/train/0.parquet",
+    "size": 433384087,
+    "sha256": "35fe48e15276e7973734da67db8302f215fec5392f51009d0c7f3be3fb94eb78"
+  },
+  {
+    "name": "uiis/val.json",
+    "url": "https://huggingface.co/datasets/LiamLian0727/UIIS/resolve/44ca5db46599f14faf8e57643014664435823738/annotations/val.json",
+    "size": 17549956,
+    "sha256": "5ed740baa1aa857058285d5947aa480774902af596e8b7effab50e631960e4a2"
+  },
+  {
+    "name": "uiis/val.parquet",
+    "url": "https://huggingface.co/api/datasets/LiamLian0727/UIIS/parquet/default/validation/0.parquet",
+    "size": 74949605,
+    "sha256": "79287a2d2054fce420d816d4421cb20305b5bf64cb699dd78d1edd2e4adf2776"
+  },
+  {
+    "name": "coralscapes/test-00000-of-00003.parquet",
+    "url": "https://huggingface.co/datasets/josauder/coralscapesV2/resolve/8a4567b2fbec14882e09aebff63a7a1ca5e24dca/instances/test-00000-of-00003.parquet",
+    "size": 630698637,
+    "sha256": "f81f06e2b72f708a6f2ec405337206ed40a1f3f3d65c1f399753f11e65448ee6"
+  },
+  {
+    "name": "coralscapes/test-00001-of-00003.parquet",
+    "url": "https://huggingface.co/datasets/josauder/coralscapesV2/resolve/8a4567b2fbec14882e09aebff63a7a1ca5e24dca/instances/test-00001-of-00003.parquet",
+    "size": 580246040,
+    "sha256": "c85e434ed443441fa20430a0917e0bdd846636720af8b0644daaa86a4ad12ca1"
+  },
+  {
+    "name": "coralscapes/test-00002-of-00003.parquet",
+    "url": "https://huggingface.co/datasets/josauder/coralscapesV2/resolve/8a4567b2fbec14882e09aebff63a7a1ca5e24dca/instances/test-00002-of-00003.parquet",
+    "size": 199290138,
+    "sha256": "fe379e18954165155af591e87856bc4d6fe58c5cbced9e79da369a6b5a528b83"
+  }
+]

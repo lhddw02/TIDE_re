@@ -1,0 +1,6 @@
+{
+  "stage": "finetuned",
+  "initialization": "Full synthetic-pretrained SegFormer-B4, including the seven-class segmentation head",
+  "weights_file_sha256": "1212f97ed1976de99928a2f620819b38ac220d3927d1239813b86e2e88afa081",
+  "initialized_model_state_sha256": "cdbc7457142ca871c3eb9d39a401e39df8418179af566cbdc7e624b7c65f7031"
+}

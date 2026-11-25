@@ -1,0 +1,8 @@
+{
+  "arm": "synthetic",
+  "seed": 17,
+  "side": 512,
+  "step": 4000,
+  "elapsed_seconds": 235.69335113093257,
+  "checkpoint_sha256": "6412a1ea22cb713ab0e205465a662f20cbf3603570d85e0cd724be3283806353"
+}

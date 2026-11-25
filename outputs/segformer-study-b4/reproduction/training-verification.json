@@ -1,0 +1,50 @@
+{
+  "verified_complete_training_stages": 3,
+  "real_and_synthetic_exact_same_initial_model": true,
+  "finetuned_starts_from_the_exact_complete_synthetic_model": true,
+  "total_successful_updates": 28442,
+  "stages": {
+    "real": {
+      "updates": 4000,
+      "processed_images": 32000,
+      "unique_images": 3937,
+      "model_state_sha256": "6e1c5af7f379fe51a4e51f9b01c7a7e1f52810e78f9c2ec3fd2e054565a8e364",
+      "initial_state_sha256": "16f75ca7fc438dca7270a44634dba460c46ffabfbfe235926b55775f0e9dad37",
+      "weight_file_sha256": "30bd2c7287ee52fea2c7de8ef45b8d18e3fdb2cdec5117f97ec3747f680ed810",
+      "initialized_from_sha256": "1cddf0f9ed0b7f1639a8f5e339c177673685df3e2e3c9575a649eb15bcf68a55",
+      "all_exported_model_tensors_finite": true,
+      "decoder_bn_batches_tracked": 4000,
+      "optimizer_finiteness_at_last_update": "not retained after baseline export",
+      "stored_model_state_elements_including_buffers": 63999944,
+      "elapsed_seconds": 1054.2337276376784
+    },
+    "synthetic": {
+      "updates": 20442,
+      "processed_images": 163530,
+      "unique_images": 54510,
+      "model_state_sha256": "cdbc7457142ca871c3eb9d39a401e39df8418179af566cbdc7e624b7c65f7031",
+      "initial_state_sha256": "16f75ca7fc438dca7270a44634dba460c46ffabfbfe235926b55775f0e9dad37",
+      "weight_file_sha256": "1212f97ed1976de99928a2f620819b38ac220d3927d1239813b86e2e88afa081",
+      "initialized_from_sha256": "1cddf0f9ed0b7f1639a8f5e339c177673685df3e2e3c9575a649eb15bcf68a55",
+      "all_exported_model_tensors_finite": true,
+      "decoder_bn_batches_tracked": 20442,
+      "optimizer_finiteness_at_last_update": "verified before export",
+      "stored_model_state_elements_including_buffers": 63999944,
+      "elapsed_seconds": 5791.73242255114
+    },
+    "finetuned": {
+      "updates": 4000,
+      "processed_images": 32000,
+      "unique_images": 3937,
+      "model_state_sha256": "092d9b8e0c564d084a0b565eb03c9759c73e887f65c707daf264f680a730979d",
+      "initial_state_sha256": "cdbc7457142ca871c3eb9d39a401e39df8418179af566cbdc7e624b7c65f7031",
+      "weight_file_sha256": "96bd5bde490b52c4c20070da54605a05181e466fd9e718a756e3298bfb878f41",
+      "initialized_from_sha256": "1212f97ed1976de99928a2f620819b38ac220d3927d1239813b86e2e88afa081",
+      "all_exported_model_tensors_finite": true,
+      "decoder_bn_batches_tracked": 24442,
+      "optimizer_finiteness_at_last_update": "verified before export",
+      "stored_model_state_elements_including_buffers": 63999944,
+      "elapsed_seconds": 1203.054094735533
+    }
+  }
+}

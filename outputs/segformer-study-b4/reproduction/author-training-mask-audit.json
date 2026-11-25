@@ -1,0 +1,18 @@
+{
+  "reference": "https://huggingface.co/datasets/hongk1998/TIDE/resolve/e4dcdcc9c3475b548330d196ba92a232b3881c29/Training_TIDE_Data.zip",
+  "compared_training_images": 3937,
+  "release_byte_range_inclusive": [
+    15838410627,
+    15852893584
+  ],
+  "byte_range_sha256": "5bff1366fd291d66f66c2daeaa594e8957bfbd9fe7c520043c5526b66deaa0c1",
+  "pixels_compared_with_our_valid_labels": 1331292211,
+  "disagreeing_valid_pixels_after_seafloor_to_background": 5996243,
+  "agreement_percent_on_valid_pixels": 99.54959227204553,
+  "images_with_any_valid_pixel_disagreement": 3894,
+  "locally_ignored_pixels": 21854589,
+  "total_native_training_pixels": 1353146800,
+  "official_seafloor_pixels": 73750952,
+  "official_frames_labeled_with_seafloor": 518,
+  "interpretation": "These official masks were prepared for training the generator. The author-converted downstream validation masks and their pixel scoring policy were not provided. The comparison maps their sea-floor class 7 to our background class 0."
+}

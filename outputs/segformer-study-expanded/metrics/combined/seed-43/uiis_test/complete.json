@@ -1,0 +1,1 @@
+{"images": 691, "input_side": 512, "seed": 43, "arm": "combined", "split": "uiis_test", "device": "cuda", "manifest_sha256": "687bcd07a65e026ae203f6c6c0342fa65453ced3ff86bba56966fb73577147b0", "checkpoint_sha256": "0d7aa4411408f004129a6d30858aee6c0b7c0bb1342452263709c8eb232a9f08"}

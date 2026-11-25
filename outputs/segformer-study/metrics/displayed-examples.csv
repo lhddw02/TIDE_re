@@ -1,0 +1,7 @@
+dataset,image_id,group,fixed_seed,crop_xyxy
+uiis_test,uiis_val_XL_2678,uiis_train_XL_1161,17,full
+uiis_test,uiis_val_XL_2636,uiis_train_XL_1368,17,full
+deepfish_test,deepfish_9866_acanthopagrus_and_caranx_f000200,9866_acanthopagrus_and_caranx,17,full
+deepfish_test,deepfish_9894_no_fish_f000850,9894_no_fish,17,full
+coralscapes_test,coral_site22_000047_003746,site22,17,"0,768,512,1024"
+coralscapes_test,coral_site23_000125_003296,site23,17,"0,640,512,896"

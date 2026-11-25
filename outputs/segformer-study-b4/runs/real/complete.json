@@ -1,0 +1,12 @@
+{
+  "stage": "real",
+  "step": 4000,
+  "seed": 17,
+  "side": 512,
+  "sample_presentations": 32000,
+  "elapsed_seconds": 1054.2337276376784,
+  "checkpoint_sha256": "30bd2c7287ee52fea2c7de8ef45b8d18e3fdb2cdec5117f97ec3747f680ed810",
+  "manifest_sha256": "91dd3c0cf9c556b244e0b7419c744e8cc5a83c24dd11bc346bed13a96647b743",
+  "init_weights_sha256": "1cddf0f9ed0b7f1639a8f5e339c177673685df3e2e3c9575a649eb15bcf68a55",
+  "final_model_state_sha256": "6e1c5af7f379fe51a4e51f9b01c7a7e1f52810e78f9c2ec3fd2e054565a8e364"
+}

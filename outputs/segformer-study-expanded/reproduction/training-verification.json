@@ -1,0 +1,43 @@
+{
+  "previous_study_recipe_differences": [
+    "arm",
+    "label_budget",
+    "manifest_sha256"
+  ],
+  "exact_union_of_two_frozen_pure_pools": true,
+  "combined_manifest_sha256": "d684883e43053e7cafaa6cd70ad68a8f61ce48484760f1888a1de5318f5bf139",
+  "source_counts": {
+    "synthetic": 3000,
+    "uiis": 3000
+  },
+  "batch_counts_per_source": {
+    "synthetic": 4,
+    "uiis": 4
+  },
+  "examples_seen_per_source_per_seed": 16000,
+  "number_of_full_passes_per_source_per_seed": 5,
+  "additional_images_per_source_seen_once_more_per_seed": 1000,
+  "runs": [
+    {
+      "seed": 17,
+      "optimizer_updates": 4000,
+      "elapsed_training_seconds": 232.54,
+      "checkpoint_sha256": "00c12e36d78fbdee02230c870aad39e2d075e6db1973cc02da28f56866c765ee",
+      "logged_loss_points": 160
+    },
+    {
+      "seed": 29,
+      "optimizer_updates": 4000,
+      "elapsed_training_seconds": 237.95,
+      "checkpoint_sha256": "9094664676fcec2af9383f52efb99b818da46a2c3420dbe935284074df5ba2ec",
+      "logged_loss_points": 160
+    },
+    {
+      "seed": 43,
+      "optimizer_updates": 4000,
+      "elapsed_training_seconds": 239.23,
+      "checkpoint_sha256": "0d7aa4411408f004129a6d30858aee6c0b7c0bb1342452263709c8eb232a9f08",
+      "logged_loss_points": 160
+    }
+  ]
+}

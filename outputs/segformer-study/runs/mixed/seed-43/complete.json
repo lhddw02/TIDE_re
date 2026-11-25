@@ -1,0 +1,8 @@
+{
+  "arm": "mixed",
+  "seed": 43,
+  "side": 512,
+  "step": 4000,
+  "elapsed_seconds": 236.3975657466799,
+  "checkpoint_sha256": "4be49e8e3cbb1d492cb874495a85e40b69b1277df645f3955e93bb56192d9e88"
+}

@@ -1,0 +1,10 @@
+{
+  "index_entry": "Training_TIDE_Data/UWDense.json",
+  "index_sha256": "bd9466c3bb0984069cdc61ec71620290f04737f4ae11f8f453f8c8287cfbd85c",
+  "index_crc32": "6fb5a3f7",
+  "total_unique_rgb_filenames": 14573,
+  "source_archive": "https://huggingface.co/datasets/hongk1998/TIDE/resolve/e4dcdcc9c3475b548330d196ba92a232b3881c29/Training_TIDE_Data.zip",
+  "index_file_note": "This shared index includes the RGB filenames from UWDense.json. The original also includes captions.",
+  "USIS10K_source_archive": "https://huggingface.co/datasets/LiamLian0727/USIS10K/resolve/b10f41ab819bcdd78459621aedae8ffb5cab3c59/USIS10K.zip",
+  "USIS10K_archive_sha256": "b518f8f9323bd6f06c57692858a94ba4f274a3c06f5a79d9513af4a758e9a5f5"
+}

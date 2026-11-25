@@ -1,0 +1,4 @@
+arm,reference_arm,metric,images,habitats,difference_pp,lower95_pp,upper95_pp,bootstrap_draws,valid_bootstraps
+mixed,real,fish_IoU,186,19,0.3508053547,-4.1115784066,4.2421937448,2000,2000
+synthetic,real,fish_IoU,186,19,-7.272038014,-10.5008073666,-1.2416962462,2000,2000
+mixed,synthetic,fish_IoU,186,19,7.6228433686,1.6187674641,11.8363505981,2000,2000

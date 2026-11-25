@@ -1,0 +1,10 @@
+cohort,stage,images,visual_groups,foreground_miou_percent,valid_pixels
+full,real,691,649,54.52267235,221806669
+full,synthetic,691,649,56.71591397,221806669
+full,finetuned,691,649,56.81576184,221806669
+no_uiis_match,real,342,324,56.15730239,114637633
+no_uiis_match,synthetic,342,324,59.33189945,114637633
+no_uiis_match,finetuned,342,324,59.85255185,114637633
+no_generator_match,real,113,110,43.36406567,29500051
+no_generator_match,synthetic,113,110,43.44171278,29500051
+no_generator_match,finetuned,113,110,44.78252065,29500051

@@ -1,0 +1,24 @@
+{
+  "synthetic": {
+    "stage": "synthetic",
+    "updates": 20442,
+    "optimizer_parameter_slots": 927,
+    "adam_step_for_every_parameter": 20442,
+    "all_first_and_second_moments_finite": true,
+    "all_full_model_tensors_and_buffers_finite": true,
+    "precision_mode": "fp32_decoder",
+    "gradient_scale": 32768.0,
+    "cumulative_decoder_bn_batches": 20442
+  },
+  "finetuned": {
+    "stage": "finetuned",
+    "updates": 4000,
+    "optimizer_parameter_slots": 927,
+    "adam_step_for_every_parameter": 4000,
+    "all_first_and_second_moments_finite": true,
+    "all_full_model_tensors_and_buffers_finite": true,
+    "precision_mode": "fp32_decoder",
+    "gradient_scale": 512.0,
+    "cumulative_decoder_bn_batches": 24442
+  }
+}

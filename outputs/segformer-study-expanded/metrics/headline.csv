@@ -1,0 +1,5 @@
+arm,training_condition,synthetic_images,real_images,unique_training_images,optimizer_updates_per_seed,uiis_test_foreground_mIoU_percent,uiis_test_foreground_mIoU_seed_sd_pp,uiis_without_generator_match_foreground_mIoU_percent,uiis_without_generator_match_foreground_mIoU_seed_sd_pp,deepfish_test_fish_IoU_percent,deepfish_test_fish_IoU_seed_sd_pp,coralscapes_test_fish_IoU_percent,coralscapes_test_fish_IoU_seed_sd_pp
+synthetic,Synthetic only,3000,0,3000,4000,34.9267389065,1.019148075,30.2489618256,2.2742275359,45.7872766576,1.9324287404,3.5443893115,0.5852542073
+mixed,Original mix,1500,1500,3000,4000,46.7828487496,0.9904736491,39.4035462767,2.4624173144,53.4101200262,1.3534782231,4.2810308806,0.1409588105
+real,Real only,0,3000,3000,4000,49.3032263586,0.4681750844,42.7288055419,1.3236201529,53.0593146715,1.6059246023,6.1164247506,0.1194695843
+combined,Expanded mix,3000,3000,6000,4000,48.5431230512,0.8416116164,40.2602714623,0.3872722891,56.4860621732,0.8175013072,4.9060187474,0.4592046267

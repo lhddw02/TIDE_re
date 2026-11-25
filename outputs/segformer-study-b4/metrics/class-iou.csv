@@ -1,0 +1,64 @@
+cohort,stage,class_id,class_name,iou_percent,images_with_class,reference_pixels
+full,real,0,Background,79.98262787,691,148868845
+full,real,1,Wrecks,67.06641784,23,3465624
+full,real,2,Fish,77.48108581,405,12859303
+full,real,3,Reefs,51.19287408,478,48559983
+full,real,4,Aquatic plants,17.17809191,87,4653296
+full,real,5,Divers,79.30368343,64,3181020
+full,real,6,Robots,34.91388105,15,218598
+full,synthetic,0,Background,82.52668459,691,148868845
+full,synthetic,1,Wrecks,69.92629788,23,3465624
+full,synthetic,2,Fish,76.68963155,405,12859303
+full,synthetic,3,Reefs,55.51795489,478,48559983
+full,synthetic,4,Aquatic plants,33.71066042,87,4653296
+full,synthetic,5,Divers,77.76983481,64,3181020
+full,synthetic,6,Robots,26.68110424,15,218598
+full,finetuned,0,Background,80.84032766,691,148868845
+full,finetuned,1,Wrecks,71.22547462,23,3465624
+full,finetuned,2,Fish,78.46779725,405,12859303
+full,finetuned,3,Reefs,50.99831361,478,48559983
+full,finetuned,4,Aquatic plants,17.24994985,87,4653296
+full,finetuned,5,Divers,83.13822363,64,3181020
+full,finetuned,6,Robots,39.81481208,15,218598
+no_uiis_match,real,0,Background,83.29730041,342,78524478
+no_uiis_match,real,1,Wrecks,70.29054087,17,2795804
+no_uiis_match,real,2,Fish,69.83624028,179,5518891
+no_uiis_match,real,3,Reefs,53.80802972,231,23135933
+no_uiis_match,real,4,Aquatic plants,22.59882199,35,2309239
+no_uiis_match,real,5,Divers,76.44312020,43,2164121
+no_uiis_match,real,6,Robots,43.96706130,9,189167
+no_uiis_match,synthetic,0,Background,84.11252259,342,78524478
+no_uiis_match,synthetic,1,Wrecks,73.05693639,17,2795804
+no_uiis_match,synthetic,2,Fish,69.63388030,179,5518891
+no_uiis_match,synthetic,3,Reefs,55.69084605,231,23135933
+no_uiis_match,synthetic,4,Aquatic plants,51.02005731,35,2309239
+no_uiis_match,synthetic,5,Divers,74.36553287,43,2164121
+no_uiis_match,synthetic,6,Robots,32.22414378,9,189167
+no_uiis_match,finetuned,0,Background,84.73274947,342,78524478
+no_uiis_match,finetuned,1,Wrecks,74.85189388,17,2795804
+no_uiis_match,finetuned,2,Fish,72.84430062,179,5518891
+no_uiis_match,finetuned,3,Reefs,54.92825166,231,23135933
+no_uiis_match,finetuned,4,Aquatic plants,23.65261883,35,2309239
+no_uiis_match,finetuned,5,Divers,81.98310464,43,2164121
+no_uiis_match,finetuned,6,Robots,50.85514147,9,189167
+no_generator_match,real,0,Background,72.42526677,113,19204777
+no_generator_match,real,1,Wrecks,76.38135780,3,877262
+no_generator_match,real,2,Fish,54.72530170,57,1214959
+no_generator_match,real,3,Reefs,46.75767681,84,7659964
+no_generator_match,real,4,Aquatic plants,5.48279753,15,375528
+no_generator_match,real,5,Divers,76.83726019,7,166881
+no_generator_match,real,6,Robots,0.00000000,1,680
+no_generator_match,synthetic,0,Background,76.45718721,113,19204777
+no_generator_match,synthetic,1,Wrecks,75.63027321,3,877262
+no_generator_match,synthetic,2,Fish,55.09123723,57,1214959
+no_generator_match,synthetic,3,Reefs,50.15017276,84,7659964
+no_generator_match,synthetic,4,Aquatic plants,8.35025637,15,375528
+no_generator_match,synthetic,5,Divers,71.42833711,7,166881
+no_generator_match,synthetic,6,Robots,0.00000000,1,680
+no_generator_match,finetuned,0,Background,75.69580099,113,19204777
+no_generator_match,finetuned,1,Wrecks,79.15426102,3,877262
+no_generator_match,finetuned,2,Fish,56.24867392,57,1214959
+no_generator_match,finetuned,3,Reefs,48.71662144,84,7659964
+no_generator_match,finetuned,4,Aquatic plants,10.51035366,15,375528
+no_generator_match,finetuned,5,Divers,74.06521388,7,166881
+no_generator_match,finetuned,6,Robots,0.00000000,1,680

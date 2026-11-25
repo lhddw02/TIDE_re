@@ -1,0 +1,8 @@
+{
+  "file": "training-targets/SynTIDE-B4-filtered.zip",
+  "sha256": "30dca679d74211bf57297d69cf6127093179b389a9f48ab397b1fc1ecb2b5250",
+  "target_pngs": 54510,
+  "bytes": 353737539,
+  "every_archived_mask_checksum_verified": true,
+  "all_retained_values_equal_raw_source_pixels": true
+}

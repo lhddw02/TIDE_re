@@ -1,0 +1,117 @@
+{
+  "seed": 20261125,
+  "taxonomy": {
+    "0": "background/seafloor",
+    "1": "wrecks/ruins",
+    "2": "fish/vertebrates",
+    "3": "reefs/invertebrates",
+    "4": "aquatic plants",
+    "5": "human divers",
+    "6": "robots",
+    "255": "ignore"
+  },
+  "raw_real": 3937,
+  "distinct_eligible_real": 3457,
+  "synthetic_captions_screened": 5451,
+  "distinct_eligible_synthetic": 5451,
+  "splits": {
+    "synthetic": {
+      "images": 3000,
+      "groups": 3000,
+      "images_containing_class": {
+        "0": 2997,
+        "1": 389,
+        "2": 1652,
+        "3": 1445,
+        "4": 369,
+        "5": 556,
+        "6": 290
+      }
+    },
+    "real": {
+      "images": 3000,
+      "groups": 2225,
+      "images_containing_class": {
+        "0": 3000,
+        "1": 125,
+        "2": 1771,
+        "3": 2026,
+        "4": 383,
+        "5": 272,
+        "6": 46,
+        "255": 1235
+      }
+    },
+    "mixed": {
+      "images": 3000,
+      "groups": 3000,
+      "images_containing_class": {
+        "0": 3000,
+        "1": 272,
+        "2": 1685,
+        "3": 1728,
+        "4": 355,
+        "5": 435,
+        "6": 183,
+        "255": 606
+      }
+    },
+    "uiis_dev": {
+      "images": 400,
+      "groups": 284,
+      "images_containing_class": {
+        "0": 400,
+        "1": 16,
+        "2": 232,
+        "3": 270,
+        "4": 43,
+        "5": 33,
+        "6": 10,
+        "255": 168
+      }
+    },
+    "uiis_test": {
+      "images": 691,
+      "groups": 649,
+      "images_containing_class": {
+        "0": 691,
+        "1": 23,
+        "2": 405,
+        "3": 478,
+        "4": 87,
+        "5": 64,
+        "6": 15,
+        "255": 276
+      }
+    },
+    "deepfish_test": {
+      "images": 186,
+      "groups": 49,
+      "images_containing_class": {
+        "0": 186,
+        "2": 96
+      }
+    },
+    "coralscapes_test": {
+      "images": 473,
+      "groups": 5,
+      "images_containing_class": {
+        "0": 473,
+        "2": 419,
+        "255": 456
+      }
+    }
+  },
+  "mixed_by_source": {
+    "uiis": 1500,
+    "synthetic": 1500
+  },
+  "real_training_candidate_files": 3057,
+  "real_training_candidate_components": 2225,
+  "group_definitions": {
+    "uiis": "64-bit pHash and dHash clusters at distance <=4 each; singleton otherwise",
+    "deepfish": "inferred recording from frame stem before _fNUMBER",
+    "coralscapes": "official site",
+    "synthetic": "original caption ID"
+  }
+}

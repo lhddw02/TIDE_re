@@ -1,0 +1,270 @@
+{
+  "input_width": 512,
+  "input_height": 512,
+  "ignore_id": 255,
+  "method": "One pass over the unique images in each frozen manifest. Scale the longer side to 512, round fitted dimensions as in train.py, and resize integer masks with PIL nearest-neighbor interpolation. All padding and original label 255 are ignored. Horizontal flipping preserves counts and the other augmentations affect only RGB.",
+  "interpretation": "Fractions describe reference pixels over a full pass. Actual optimization averages the valid-pixel cross-entropy separately in each sampled batch.",
+  "arms": {
+    "synthetic": {
+      "total_valid_supervised_pixels": 786432000,
+      "by_source": {
+        "synthetic": {
+          "images": 3000,
+          "canvas_pixels": 786432000,
+          "fitted_image_pixels": 786432000,
+          "padding_pixels": 0,
+          "ignored_pixels_inside_image": 0,
+          "valid_supervised_pixels": 786432000,
+          "fraction_of_canvas_valid": 1.0,
+          "pixels_by_class_id_0_to_6": [
+            461231124,
+            32110039,
+            94649684,
+            144693634,
+            12813574,
+            30332398,
+            10601547
+          ],
+          "native_width_range": [
+            512,
+            512
+          ],
+          "native_height_range": [
+            512,
+            512
+          ],
+          "fitted_width_x_height_image_counts": {
+            "512x512": 3000
+          },
+          "fraction_of_arm_valid_supervised_pixels": 1.0
+        }
+      }
+    },
+    "mixed": {
+      "total_valid_supervised_pixels": 695725934,
+      "by_source": {
+        "synthetic": {
+          "images": 1500,
+          "canvas_pixels": 393216000,
+          "fitted_image_pixels": 393216000,
+          "padding_pixels": 0,
+          "ignored_pixels_inside_image": 0,
+          "valid_supervised_pixels": 393216000,
+          "fraction_of_canvas_valid": 1.0,
+          "pixels_by_class_id_0_to_6": [
+            230688268,
+            16321845,
+            47779998,
+            70987160,
+            6771271,
+            14849144,
+            5818314
+          ],
+          "native_width_range": [
+            512,
+            512
+          ],
+          "native_height_range": [
+            512,
+            512
+          ],
+          "fitted_width_x_height_image_counts": {
+            "512x512": 1500
+          },
+          "fraction_of_arm_valid_supervised_pixels": 0.5651880730379673
+        },
+        "uiis": {
+          "images": 1500,
+          "canvas_pixels": 393216000,
+          "fitted_image_pixels": 307736064,
+          "padding_pixels": 85479936,
+          "ignored_pixels_inside_image": 5226130,
+          "valid_supervised_pixels": 302509934,
+          "fraction_of_canvas_valid": 0.7693225453694661,
+          "pixels_by_class_id_0_to_6": [
+            190222347,
+            4316567,
+            18697772,
+            80884402,
+            4857276,
+            2854961,
+            676609
+          ],
+          "native_width_range": [
+            256,
+            2180
+          ],
+          "native_height_range": [
+            240,
+            1447
+          ],
+          "fitted_width_x_height_image_counts": {
+            "355x512": 1,
+            "356x512": 2,
+            "360x512": 1,
+            "384x512": 2,
+            "400x512": 1,
+            "512x253": 1,
+            "512x268": 1,
+            "512x271": 2,
+            "512x272": 1,
+            "512x274": 5,
+            "512x277": 1,
+            "512x288": 138,
+            "512x290": 4,
+            "512x298": 1,
+            "512x303": 1,
+            "512x307": 1,
+            "512x312": 1,
+            "512x315": 1,
+            "512x319": 1,
+            "512x320": 6,
+            "512x321": 4,
+            "512x322": 1,
+            "512x323": 1,
+            "512x324": 1,
+            "512x325": 2,
+            "512x332": 1,
+            "512x333": 3,
+            "512x338": 1,
+            "512x339": 1,
+            "512x340": 4,
+            "512x341": 6,
+            "512x342": 1,
+            "512x344": 1,
+            "512x346": 2,
+            "512x348": 2,
+            "512x351": 1,
+            "512x352": 1,
+            "512x353": 2,
+            "512x358": 3,
+            "512x359": 5,
+            "512x362": 1,
+            "512x363": 5,
+            "512x364": 1,
+            "512x367": 1,
+            "512x368": 13,
+            "512x383": 3,
+            "512x384": 920,
+            "512x397": 1,
+            "512x410": 1,
+            "512x411": 1,
+            "512x416": 1,
+            "512x460": 2,
+            "512x476": 2,
+            "512x512": 333
+          },
+          "fraction_of_arm_valid_supervised_pixels": 0.43481192696203275
+        }
+      }
+    },
+    "real": {
+      "total_valid_supervised_pixels": 598356586,
+      "by_source": {
+        "uiis": {
+          "images": 3000,
+          "canvas_pixels": 786432000,
+          "fitted_image_pixels": 608226816,
+          "padding_pixels": 178205184,
+          "ignored_pixels_inside_image": 9870230,
+          "valid_supervised_pixels": 598356586,
+          "fraction_of_canvas_valid": 0.7608497441609701,
+          "pixels_by_class_id_0_to_6": [
+            377590404,
+            7345446,
+            38630392,
+            157302159,
+            11502540,
+            4904382,
+            1081263
+          ],
+          "native_width_range": [
+            256,
+            2180
+          ],
+          "native_height_range": [
+            240,
+            1600
+          ],
+          "fitted_width_x_height_image_counts": {
+            "355x512": 1,
+            "356x512": 2,
+            "360x512": 1,
+            "384x512": 3,
+            "386x512": 1,
+            "391x512": 1,
+            "400x512": 1,
+            "404x512": 1,
+            "512x245": 1,
+            "512x253": 1,
+            "512x262": 1,
+            "512x268": 1,
+            "512x271": 3,
+            "512x272": 1,
+            "512x274": 6,
+            "512x277": 1,
+            "512x288": 246,
+            "512x290": 5,
+            "512x298": 1,
+            "512x303": 1,
+            "512x307": 1,
+            "512x312": 1,
+            "512x315": 1,
+            "512x316": 1,
+            "512x317": 1,
+            "512x319": 3,
+            "512x320": 9,
+            "512x321": 6,
+            "512x322": 1,
+            "512x323": 1,
+            "512x324": 1,
+            "512x325": 2,
+            "512x329": 1,
+            "512x330": 1,
+            "512x331": 1,
+            "512x332": 1,
+            "512x333": 3,
+            "512x338": 1,
+            "512x339": 1,
+            "512x340": 4,
+            "512x341": 8,
+            "512x342": 3,
+            "512x343": 1,
+            "512x344": 1,
+            "512x346": 2,
+            "512x348": 2,
+            "512x351": 1,
+            "512x352": 1,
+            "512x353": 3,
+            "512x354": 1,
+            "512x358": 6,
+            "512x359": 6,
+            "512x362": 1,
+            "512x363": 8,
+            "512x364": 3,
+            "512x365": 1,
+            "512x367": 3,
+            "512x368": 18,
+            "512x379": 1,
+            "512x383": 4,
+            "512x384": 2080,
+            "512x387": 1,
+            "512x390": 1,
+            "512x397": 1,
+            "512x403": 1,
+            "512x410": 1,
+            "512x411": 1,
+            "512x416": 1,
+            "512x436": 1,
+            "512x460": 2,
+            "512x466": 1,
+            "512x476": 2,
+            "512x485": 1,
+            "512x512": 512
+          },
+          "fraction_of_arm_valid_supervised_pixels": 1.0
+        }
+      }
+    }
+  }
+}

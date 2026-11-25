@@ -1,0 +1,7 @@
+dataset,image_id,group,fixed_seed,crop_xyxy,reference_fish_pixels_in_view,synthetic_true_fish_pixels_in_view,mixed_true_fish_pixels_in_view,real_true_fish_pixels_in_view,combined_true_fish_pixels_in_view
+uiis_test,uiis_val_XL_2678,uiis_train_XL_1161,17,full,11961,10559,10422,10511,10452
+uiis_test,uiis_val_XL_2636,uiis_train_XL_1368,17,full,105563,103740,104557,103213,103101
+deepfish_test,deepfish_9866_acanthopagrus_and_caranx_f000200,9866_acanthopagrus_and_caranx,17,full,17868,12476,1799,6745,4784
+deepfish_test,deepfish_9894_no_fish_f000850,9894_no_fish,17,full,0,0,0,0,0
+coralscapes_test,coral_site22_000047_003746,site22,17,"0,768,512,1024",1547,0,0,0,0
+coralscapes_test,coral_site23_000125_003296,site23,17,"0,640,512,896",2856,0,0,0,0

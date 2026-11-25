@@ -1,0 +1,20 @@
+{
+  "outputs/segformer-study/report.html": "5b4779f66da0ee1a98e56cd3519d9c1811f92450e6675bef8f54c51ef0ad553c",
+  "outputs/segformer-study/metrics/deepfish-habitat-sensitivity.csv": "2869581ae1606437d00755e64e90098d03300d2d999fe5d040ac85bc0ad2b5f9",
+  "outputs/segformer-study/metrics/groups.csv": "1a61ed8154e73c10537ea88715509aa06b2182f5b34bb961791359883e175bd9",
+  "outputs/segformer-study/metrics/summary.csv": "57febdeaa5b1dc99514d0e925c2f50891bac9e28db36ec08e1187094173e9c61",
+  "outputs/segformer-study/metrics/uiis-overlap-paired-deltas.csv": "969b6af7b492fe49d1fee55dbdacf634b8ec45cb752547c6fc15e1441d1a5879",
+  "outputs/segformer-study/metrics/uiis-overlap-sensitivity.csv": "cba95e14635836b934f7477b5153c37f36d861b803f2a834c392431f1f9c4b36",
+  "outputs/segformer-study/metrics/per_run.csv": "5a0d0df942fc1bdbc9afa995f90ff8410ad741f315a16dfcf0aeb3461293131c",
+  "outputs/segformer-study/metrics/displayed-examples.csv": "e0c91494b5fbc9fa6ef9031914e387e30c69aa52287f4260a0c357487f611b03",
+  "outputs/segformer-study/metrics/class_iou.csv": "0e968a8164a47cb57df91ce4a4b3da802d42fefc493e31cdbfb7bca0449a3e93",
+  "outputs/segformer-study/metrics/differences.csv": "62ff2997a30792652394537c7b0fea913c8040870fbfdbf6ea4bdb801908e1ff",
+  "outputs/segformer-study-expanded/report.html": "19f8860870f3cc97342d8b921fa6a0a46d064ee84736e6f4d4d4441a9571b303",
+  "outputs/segformer-study-expanded/metrics/headline.csv": "991d8ebaedf1c87e44f2583fb6ff2c4fa30f58989308b34a9ad11a5055f55852",
+  "outputs/segformer-study-expanded/metrics/groups.csv": "9134f33e63e4716d372324a9546c155efadf283bc9a70dd78b6b2375a554c9b8",
+  "outputs/segformer-study-expanded/metrics/summary.csv": "7daf3c681f4a8ed794d0d5a36a51d387143ee0d8c8c16a879fb7a7b915b70902",
+  "outputs/segformer-study-expanded/metrics/per_run.csv": "b38447266822a0ed9cf727f4c1250ecd2fa9cfced3cdddcec81a298475b7ecc4",
+  "outputs/segformer-study-expanded/metrics/displayed-examples.csv": "a75b387f344cb0b91ec4b8886212d75677eb86b4b1203ad004e539d4733ba611",
+  "outputs/segformer-study-expanded/metrics/class_iou.csv": "8babedd0ddd7f20193375c6abe0233c18de39178416084d0fba2fed56926a7cc",
+  "outputs/segformer-study-expanded/metrics/differences.csv": "e1947a4ff71e96bfdd85608d8a230ccdc039daa7338f84756f3204dd02ecb8a0"
+}

@@ -1,0 +1,30 @@
+{
+  "last_saved_step": 3000,
+  "unsaved_logged_steps_discarded": 75,
+  "restored_state": [
+    "model",
+    "optimizer",
+    "gradient scaler",
+    "CPU RNG",
+    "CUDA RNG"
+  ],
+  "learning_schedule": "continues from step 3001",
+  "original_process_exit_code": 143,
+  "resume_state_sha256": "85ca747b18fb6731dc262e8aecbfc2e76c7dcee27d0ed5b5fa89777cf17e2d7b",
+  "last_logged_batch_loss_before_restart": {
+    "step": 3075,
+    "mean_last_25": 0.4879046
+  },
+  "original_progress_3001_to_3075": [
+    0.5234667,
+    0.4959621,
+    0.4879046
+  ],
+  "runtime_note": "The fused AdamW scalar step was moved from CPU to the parameter device when loading the optimizer state on PyTorch 2.0.1.",
+  "replayed_progress_3001_to_3075": [
+    0.5234622,
+    0.4959585,
+    0.487905
+  ],
+  "max_absolute_difference_in_replayed_25_step_mean_loss": 4.499999999962867e-06
+}

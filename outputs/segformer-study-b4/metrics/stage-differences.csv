@@ -1,0 +1,10 @@
+cohort,stage,comparator,difference_pp,lower95_pp,upper95_pp,bootstrap_groups,bootstrap_draws,draws_with_all_six_classes
+full,finetuned,real,2.29308949,-1.90353068,5.86324745,649,2000,2000
+full,finetuned,synthetic,0.09984788,-4.41924669,4.90712614,649,2000,2000
+full,synthetic,real,2.19324161,-2.82400341,6.07983125,649,2000,2000
+no_uiis_match,finetuned,real,3.69524946,-2.55919521,8.99825845,324,2000,2000
+no_uiis_match,finetuned,synthetic,0.52065240,-5.26218064,8.26685896,324,2000,2000
+no_uiis_match,synthetic,real,3.17459706,-4.68224866,7.77657439,324,2000,2000
+no_generator_match,finetuned,real,1.41845498,-0.98826231,8.15846682,110,2000,1222
+no_generator_match,finetuned,synthetic,1.34080787,-0.87730963,6.52335381,110,2000,1222
+no_generator_match,synthetic,real,0.07764711,-2.77932357,2.81312669,110,2000,1222

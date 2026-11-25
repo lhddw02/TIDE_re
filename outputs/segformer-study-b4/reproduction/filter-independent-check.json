@@ -1,0 +1,83 @@
+{
+  "teacher_sha256": "30bd2c7287ee52fea2c7de8ef45b8d18e3fdb2cdec5117f97ec3747f680ed810",
+  "images": 12,
+  "pixels": 3145728,
+  "disagreements": 148,
+  "binary_decision_agreement": 0.9999529520670573,
+  "sampling": "12 distinct image indices selected by numpy.default_rng(1703).choice without replacement",
+  "reference": "Standard CPU float32 SegFormer, negative log-softmax of raw class, same per-class cutoffs. Stored targets used CUDA AMP float16.",
+  "per_image": [
+    {
+      "id": "TIDE_004561",
+      "pixels": 262144,
+      "disagreements": 22,
+      "max_disagreement_margin_ce": 0.0004907911661027053
+    },
+    {
+      "id": "TIDE_012999",
+      "pixels": 262144,
+      "disagreements": 0,
+      "max_disagreement_margin_ce": 0.0
+    },
+    {
+      "id": "TIDE_013790",
+      "pixels": 262144,
+      "disagreements": 30,
+      "max_disagreement_margin_ce": 0.003144570643776712
+    },
+    {
+      "id": "TIDE_021108",
+      "pixels": 262144,
+      "disagreements": 7,
+      "max_disagreement_margin_ce": 0.0012177443149445633
+    },
+    {
+      "id": "TIDE_021306",
+      "pixels": 262144,
+      "disagreements": 17,
+      "max_disagreement_margin_ce": 0.0009320741536973098
+    },
+    {
+      "id": "TIDE_022564",
+      "pixels": 262144,
+      "disagreements": 21,
+      "max_disagreement_margin_ce": 0.0016200328228117844
+    },
+    {
+      "id": "TIDE_030714",
+      "pixels": 262144,
+      "disagreements": 13,
+      "max_disagreement_margin_ce": 0.0015469670214105502
+    },
+    {
+      "id": "TIDE_040165",
+      "pixels": 262144,
+      "disagreements": 14,
+      "max_disagreement_margin_ce": 0.0007397115148950473
+    },
+    {
+      "id": "TIDE_042453",
+      "pixels": 262144,
+      "disagreements": 0,
+      "max_disagreement_margin_ce": 0.0
+    },
+    {
+      "id": "TIDE_042887",
+      "pixels": 262144,
+      "disagreements": 7,
+      "max_disagreement_margin_ce": 0.0006567751814186007
+    },
+    {
+      "id": "TIDE_047479",
+      "pixels": 262144,
+      "disagreements": 2,
+      "max_disagreement_margin_ce": 0.00018396133673781456
+    },
+    {
+      "id": "TIDE_049642",
+      "pixels": 262144,
+      "disagreements": 15,
+      "max_disagreement_margin_ce": 0.0007530981657149216
+    }
+  ]
+}

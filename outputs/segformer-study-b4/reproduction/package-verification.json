@@ -1,0 +1,12 @@
+{
+  "verified": true,
+  "b4_training_stages": 3,
+  "b4_prediction_masks": 2073,
+  "previous_B0_files_with_unchanged_sha256": 18,
+  "independently_recomputed_primary_stage_cohort_scores": 9,
+  "independently_recomputed_secondary_scores": 15,
+  "local_report_links_checked": 20,
+  "embedded_report_figures_checked": 2,
+  "verified_training_archives": 2,
+  "report_sha256": "4adf0518d119702505d69b93e55e13b8eeb9720d143b5114f0c6d0ffce306e68"
+}
