@@ -7,18 +7,7 @@
 
 ## SegFormer evaluation on UIIS
 
-This repository includes our evaluation of the authors’ released SynTIDE dataset. The B4 runs used one seed and evaluated all three checkpoints on the same 691 UIIS images. The metric averages IoU across six foreground classes. [Original TIDE repository](https://github.com/HongkLin/TIDE)
-
-| Training stage | Our B4 mIoU | TIDE Table 3 |
-|---|---:|---:|
-| UIIS real images | 54.52% | 70.2% |
-| Full SynTIDE pretraining | 56.72% | 76.5% |
-| SynTIDE followed by UIIS fine-tuning | 56.82% | 75.4% |
-
-The fine-tuned model gained 2.29 percentage points over the real-only baseline. Its paired 95% interval across evaluation groups was −1.90 to +5.86 points. The B0 and B4 reports document the data, training schedules and evaluation details.
-
-- [B4 stage metrics](outputs/segformer-study-b4/metrics/stage-comparison.csv) and [full B4 report](outputs/segformer-study-b4/report.html)
-- [B0 baseline report](outputs/segformer-study/report.html) and [expanded B0 comparison](outputs/segformer-study-expanded/report.html)
+We evaluated the authors’ released SynTIDE dataset using SegFormer-B0 and SegFormer-B4. The results summary covers the training mixtures, synthetic pretraining and UIIS fine-tuning, and the comparison with TIDE Table 3. [Training results](outputs/RESULTS.md) · [Original TIDE repository](https://github.com/HongkLin/TIDE)
 
 Open the HTML reports locally after cloning to view their charts. The repository includes the reports, metrics, selected examples and reproduction scripts. Links in the reports to trained weights, prediction sets or label archives refer to the full local experiment. The scripts rebuild the machine-specific manifests from the source datasets. [SynTIDE download](https://huggingface.co/datasets/hongk1998/TIDE)
 
